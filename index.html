@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Object-Oriented Learning: Perception, Representation, and Reasoning</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      padding-top: 120px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    h1, h2, h3, p, table {
+      margin: 20px;
+    }
+
+    .table {
+      width: 96%;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    #references li {
+      font-size: 14px;
+    }
+
+    #sponsors p {
+      font-style: italic;
+    }
+
+    #pc td {
+      padding-right: 3em;
+      padding-left: 1em;
+    }
+
+    :target::before {
+      content: "";
+      display: block;
+      height: 60px; /* fixed header height*/
+      margin: -60px 0 0; /* negative fixed header height */
+    }
+
+    @media (min-width: 768px) {
+      .container {
+          width: 768px;
+      }
+
+      #header {
+          width: 768px;
+      }
+
+      .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+      }
+
+      .navbar .navbar-collapse {
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 1200px) {
+
+      body {
+        padding-top: 60px;
+      }
+
+      :target::before {
+        height: 60px; /* fixed header height*/
+        margin: -60px 0 0; /* negative fixed header height */
+      }
+    }
+
+  </style>
+
+</head>
+
+<div class="navbar navbar-default navbar-fixed-top" id="navbar">
+
+  <div class="container" id="header">
+
+    <div class="navbar-header">
+
+      <button class="navbar-toggle"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar-main">
+
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
+      </button>
+
+    </div> <!-- navbar-header -->
+
+    <div class="navbar-collapse collapse" id="navbar-main">
+
+      <ul class="nav navbar-nav">
+        <li><a href="#call-for-papers">Call For Papers</a></li>
+        <li><a href="#important-dates">Important Dates</a></li>
+        <!-- <li><a href="#schedule">Schedule</a></li> -->
+        <li><a href="#invited-speakers">Invited Speakers</a></li>
+        <!-- <li><a href="#program">Program</a></li> -->
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <!-- <li><a href="#pc">Program Committee</a></li> -->
+      </ul>
+
+    </div> <!-- navbar-main -->
+
+  </div>
+
+</div> <!-- navbar -->
+
+<body>
+
+  <div class="container" id="content">
+
+    <div class="page-content">
+
+      <div class="row" id="title">
+
+        <h1 class="text-center">Object-Oriented Learning: Perception, Representation, and Reasoning</h1>
+        <h4 class="text-center"><a href="https://icml.cc/Conferences/2020/Dates">International Conference on Machine Learning (ICML)</a></h4>
+        <h4 class="text-center">July 17-18, 2020</h4>
+        <h4 class="text-center">Vienna, Austria</h4>
+        <hr>
+
+      </div> <!-- row -->
+
+      <div class="row" id="introduction">
+
+        <p>
+        Objects, and the interactions between them, are the foundations on which our understanding of the world is built [1]. Similarly, abstractions centered around the perception and representation of objects play a key role in building human-like AI, supporting high-level cognitive abilities like causal reasoning, object-centric exploration, and problem solving [2,4,5,6]. Indeed, prior works have shown how relational reasoning and control problems can greatly benefit from having object descriptions [2]. Yet, many of the current methods in machine learning focus on a less structured approach in which objects are only implicitly represented [3], posing a challenge for interpretability and the reuse of knowledge across tasks. Motivated by the above observations, there has been a recent effort to reinterpret various learning problems from the perspective of object-oriented representations [2,4,5,6].
+        </p>
+        <p>
+        In this workshop, we will showcase a variety of approaches in object-oriented learning, with three particular emphases. Our first interest is in learning object representations in an unsupervised manner. Although computer vision has made an enormous amount of progress in learning about objects via supervised methods, we believe that learning about objects with little to no supervision is preferable: it minimizes labeling costs, and also supports adaptive representations that can be changed depending on the particular situation and goal. The second primary interest of this workshop is to explore how object-oriented representations can be leveraged for downstream tasks such as reinforcement learning and causal reasoning. Lastly, given the central importance of objects in human cognition, we will highlight interdisciplinary perspectives from cognitive science and neuroscience on how people perceive and understand objects.
+        </p>
+
+      </div> <!-- introduction -->
+
+      <div class="row" id="call-for-papers">
+
+        <h2>Call for Papers</h2>
+        <p>We are sourcing short, four-page papers focusing on all aspects of object-oriented learning. We welcome submissions on:</p>
+
+        <p>
+        <ul>
+          <li>Learning unsupervised object-centric representations,</li>
+          <li>Leveraging object-centric representations in RL,</li>
+          <li>The interface between objects and causal reasoning,</li>
+          <li>Object-centric approaches to exploration,</li>
+          <li>Inductive biases which favor object representations,</li>
+          <li>Temporal "objects" (i.e. events),</li>
+          <li>Datasets or environments for learning and testing object-centric reasoning,</li>
+          <li>Object-centric aspects of human cognition,</li>
+          <li>Subjects which are otherwise relevant to object-oriented learning.</li>
+        </ul>
+        </p>
+
+        <p><b>We particularly encourage submissions from students from groups that are underrepresented at machine learning conferences</b>, including: gender, gender identity, sexual orientation, race, ethnicity, nationality, disability, and institution. We are pleased to be able to offer a limited number of travel grants to student presenters from these groups; if you would like to apply for financial assistance, please indicate this when submitting your paper.</p>
+
+        <p> Submission Policy: </p>
+        <p>
+        <ul>
+          <li> Submissions should be a maximum of four pages, plus any number of pages for references and supplementary material. We ask authors to use the supplementary material only for minor details that do not fit in the main paper. </li>
+          <li> Papers should be fully anonymized for double-blind review. </li>
+          <li>Papers should use the <a href='https://github.com/ICLR/Master-Template/blob/master/archive/iclr2020.zip'>ICLR style file</a>.</li>
+          <li> Dual submission policy: we welcome submissions that have been published or are currently under review at other venues, including both full conference papers and workshops. However, all submissions should be shortened to four pages. </li>
+          <li>Evaluation criteria: Papers will be reviewed for topicality, clarity, correctness, and novelty; however, we welcome submissions which are still work-in-progress. Papers which are longer than four pages, clearly off-topic, or not anonymized will be rejected without review.</li>
+          <li>Papers accepted to the workshop will not be considered archival publications.</li>
+          <li>Submission site: <a href="https://cmt3.research.microsoft.com/BAICS2020/">https://cmt3.research.microsoft.com/BAICS2020/</a></li>
+        </ul>
+        </p>
+  
+      </div> <!-- call-for-papers -->
+
+      <div class="row" id="important-dates">
+
+        <h2>Important Dates and Links</h2>
+
+        <p>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td>Submission site opens</td>
+              <td>April 15, 2020</td>
+            </tr>
+            <!-- <tr>
+              <td>Submission site</td>
+              <td><a href="https://cmt3.research.microsoft.com/OOL2020/">https://cmt3.research.microsoft.com/OOL2020/</a></td>
+            </tr> -->
+            <tr>
+              <td>Submission deadline</td>
+              <td>May 1, 2020 (Midnight anywhere on Earth)</td>
+            </tr>
+            <tr>
+              <td>Decisions announced</td>
+              <td>May 29, 2020</td>
+            </tr>
+            <!-- <tr>
+              <td>Camera-ready due</td>
+              <td>April 3, 2020, 6pm Pacific</td>
+            </tr> -->
+            <tr>
+              <td>Day of workshop</td>
+              <td>TBD (July 17-18, 2020)</td>
+            </tr>
+          </tbody>
+        </table>
+        </p>
+
+      </div> <!-- important-dates -->
+
+      <!-- <div class="row" id="schedule">
+
+        <h2>Schedule</h2>
+        <p> To be announced! </p>
+
+      </div> --> <!-- schedule -->
+
+      <div class="row" id="invited-speakers">
+
+        <h2>Invited Speakers</h2>
+        <p> To be announced! </p>
+
+      </div> <!-- invited-speakers -->
+
+      <!-- <div class="row" id="program">
+        <h2>Program</h2>
+        <p>To be announced!</p>
+      </div> -->
+
+      <div class="row" id="sponsors">
+        <h2>Sponsors</h2>
+        <div>
+        <p>
+          <a href="http://deepmind.com"><img src="deepmind.png" height="80px"/></a>
+        </p>
+        <p>
+          <a href="https://www.kakaobrain.com"><img src="kakaobrain.svg" height="40px"/></a>
+        </p>
+        </div>
+
+      </div> <!-- sponsors -->
+
+      <div class="row" id="organizers">
+
+        <h2>Organizers</h2>
+        <p>
+        <ul>
+          <li><b><a href="http://www.sungjinahn.com">Sungjin Ahn</a></b> (Rutgers University)</li>
+          <li><b><a href="http://csml.stats.ox.ac.uk/people/kosiore">Adam R. Kosiorek</a></b> (DeepMind / Oxford)</li>
+          <li><b><a href="http://www.jesshamrick.com">Jessica B. Hamrick</a></b> (DeepMind)</li>
+          <li><b><a href="http://www.sjoerdvansteenkiste.com">Sjoerd van Steenkiste</a></b> (IDSIA)</li>
+          <li><b><a href="https://yoshuabengio.org/">Yoshua Bengio</a></b> (MILA, Université de Montréal)</li>
+        </ul>
+        </p>
+
+      </div> <!-- organizers -->
+
+      <!-- <div class="row" id="pc">
+        <h2>Program Committee</h2>
+        <p>To be announced!</p>
+      </div> --> <!-- program committee -->
+
+
+      <div class="row" id="references">
+        <h3>References</h3>
+        <p>
+        <ol>
+        	<li>Spelke, E. S., & Kinzler, K. D. (2007). Core knowledge. Developmental science, 10(1), 89-96.</li>
+        	<li>Bapst, V., Sanchez-Gonzalez, A., Doersch, C., Stachenfeld, K. L., Kohli, P., Battaglia, P. W., & Hamrick, J. B. (2019). Structured agents for physical construction. ICML 2019.</li>
+        	<li>Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., ... & Petersen, S. (2015). Human-level control through deep reinforcement learning. Nature, 518(7540), 529-533.</li>
+        	<li>Kosiorek, A., Kim, H., Teh, Y.W. and Posner, I., (2018). Sequential attend, infer, repeat: Generative modelling of moving objects. In Advances in Neural Information Processing Systems 2018.</li>
+        	<li>Lin, Z., Wu, Y.F., Peri, S.V., Sun, W., Singh, G., Deng, F., Jiang, J. and Ahn, S., (2020). SPACE: Unsupervised Object-Oriented Scene Representation via Spatial Attention and Decomposition. ICLR 2020.</li>
+        	<li>van Steenkiste, S., Chang, M., Greff, K., & Schmidhuber, J. (2018). Relational neural expectation maximization: Unsupervised discovery of objects and their interactions. ICLR 2018.</li>
+        </ol>
+        </p>
+      </div> <!-- references -->
+
+    </div> <!-- container -->
+
+  </div> <!-- page-content -->
+
+</body>
+</html>
