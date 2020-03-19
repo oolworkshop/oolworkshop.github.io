@@ -19,10 +19,15 @@
       line-height: 20px;
     }
 
+    a {
+      color: #ff9933;
+    }
+
     h1, h2, h3 {
       font-family: 'Playfair Display', serif;
       font-weight: bold;
       font-style: italic;
+      color: #664d00;
     }
 
     h1, h2, h3, p, table {
@@ -50,11 +55,22 @@
       padding-left: 1em;
     }
 
+    #content {
+      border-style: solid;
+      border-color: #b38600;
+      border-width: 2px;
+      margin-bottom: 36px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+      color: #664d00;
+    }
+
     :target::before {
       content: "";
       display: block;
-      height: 60px; /* fixed header height*/
-      margin: -60px 0 0; /* negative fixed header height */
+      height: 72px; /* fixed header height*/
+      margin: -72px 0 0; /* negative fixed header height */
     }
 
     @media (min-width: 768px) {
@@ -78,14 +94,8 @@
     }
 
     @media (min-width: 1200px) {
-
       body {
-        padding-top: 60px;
-      }
-
-      :target::before {
-        height: 60px; /* fixed header height*/
-        margin: -60px 0 0; /* negative fixed header height */
+        padding-top: 72px;
       }
     }
 
