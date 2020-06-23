@@ -5,7 +5,7 @@ import pandas as pd
 from utils import load_presentation_data, read_meeting_json, meeting_json_exists
 
 
-INCLUDE_MEETING_URLS = True
+INCLUDE_MEETING_URLS = False
 TEMPLATE = """
 ---
 layout: paper
@@ -85,7 +85,7 @@ def make_program():
         print(data["unique_id"])
 
         if INCLUDE_MEETING_URLS:
-            meeting_id = "BAICS_{}".format(data["unique_id"])
+            meeting_id = "OOL_{}".format(data["unique_id"])
             if meeting_json_exists(meeting_id):
                 meeting = read_meeting_json(meeting_id)
                 data["meeting_url"] = meeting["join_url"]
@@ -99,12 +99,12 @@ def make_program():
         data["title"] = data["title"].replace("\"", "\\\"")
         data["live"] = str(data["live"]).lower()
 
-        data["rocket_id"] = "baics_channel_{:02d}".format(data["unique_id"])
+        data["rocket_id"] = "ool_channel_{:02d}".format(data["unique_id"])
         if data["kind"] == "opening":
-            data["rocket_id"] = "workshop_BAICS"
+            data["rocket_id"] = "workshop_ool"
 
         html = TEMPLATE.format(**data)
-        path = "program/baics_{}.html".format(data["unique_id"])
+        path = "program/ool_{}.html".format(data["unique_id"])
         assert not os.path.exists(path)
         with open(path, "w") as fh:
             fh.write(html)
