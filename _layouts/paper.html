@@ -1,0 +1,99 @@
+---
+layout: default
+video: true
+chat: true
+session_1: false
+session_2: false
+---
+
+<div class="row justify-content-center">
+<div class="paper text-center">
+	<h3>{{ page.title }}</h3>
+	<ul>
+		<li><b>{{ page.authors }}</b></li>
+		<li>
+		<span>
+			{% if page.track == "blue_sky" %}
+			Blue Sky Ideas Track
+			{% elsif page.track == "research" %}
+			Research Track
+			{% elsif page.track == "invited" %}
+			Invited Talk
+			{% elsif page.track == "opening" %}
+			Opening Remarks
+			{% endif %}
+		</span>
+		{% if page.kind == "oral" %}
+		<span> (Oral)</span>
+		{% elsif page.kind == "spotlight" %}
+		<span> (Spotlight)</span>
+		{% endif %}
+		</li>
+
+		{% if page.session_id > 0 %}
+		<li>
+		{% if page.camera_ready %}
+		<span><a href="/pdf/BAICS_{{ page.id }}.pdf" target="_blank">PDF</a></span>
+		{% else %}
+		<span>PDF</span>
+		{% endif %}
+		{% if page.session_id == 1 and layout.session_1 and page.meeting_url %}
+		<span> · </span>
+		<span><a href="{{ page.meeting_url }}" target="_blank">Join Meeting Room</a></span>
+		<span> · </span>
+		<span><a href="https://iclr.cc/virtual/workshops_4.html" target="_blank">Password</a></span>
+		{% elsif page.session_id == 2 and layout.session_2 and page.meeting_url %}
+		<span> · </span>
+		<span><a href="{{ page.meeting_url }}" target="_blank">Join Meeting Room</a></span>
+		<span> · </span>
+		<span><a href="https://iclr.cc/virtual/workshops_4.html" target="_blank">Password</a></span>
+		{% endif %}
+		{% if page.kind == "oral" %}
+		<span> · </span>
+		<span><a href="/slides/BAICS_{{ page.id }}.pdf" target="_blank">Slides</a></span>
+		{% endif %}
+		</li>
+		{% endif %}
+
+		{% if page.track == "invited" or page.track == "opening" %}
+		<li>
+		<span><a href="/slides/BAICS_{{ page.id }}.pdf" target="_blank">Slides</a></span>
+		</li>
+		{% endif %}
+
+	</ul>
+</div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col">
+	{% if layout.video and page.live != true %}
+    <div id="presentation-embed-{{ page.slides_live_id }}" class="slp"></div>
+    <script src='https://slideslive.com/embed_presentation.js'></script>
+    <script>
+      embed = new SlidesLiveEmbed('presentation-embed-{{ page.slides_live_id }}', {
+      presentationId: '{{ page.slides_live_id }}',
+      autoPlay: false, // change to true to autoplay the embedded presentation
+      verticalEnabled: true,
+      allowHiddenControlsWhenPaused: true,
+      zoomRatio: 0.25,
+      hideTitle: true,
+      });
+    </script>
+    {% elsif page.live %}
+    <div class="text-center"><i>Please note that this talk is NOT pre-recorded and will be streamed live.</i></div>
+    {% else %}
+    <div class="text-center"><i>Video coming soon!</i></div>
+	{% endif %}
+  </div>
+  
+  <div class="col">
+	{% if layout.chat %}
+    <div class="rocket">
+      <iframe frameborder="0" src="https://iclr.rocket.chat/channel/{{ page.rocket_id }}?layout=embedded" width="100%" height="680px"></iframe>
+    </div>
+    {% else %}
+    <div class="text-center"><i>Chat coming soon!</i></div>
+	{% endif %}
+  </div>
+</div>

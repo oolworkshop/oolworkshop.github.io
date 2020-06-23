@@ -1,0 +1,191 @@
+a {
+  color: #ff9933;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  /*padding-top: 120px;*/
+  font-size: 16px;
+  line-height: 20px;
+  /*font-family: 'Palatino',serif;*/
+  /*font-size: 18px;*/
+  /*line-height: 30px;*/
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  /*font-weight: bold;*/
+  /*font-style: italic;*/
+  color: #664d00;
+  margin-bottom: 20px;
+}
+
+dl, ol, ul {
+  margin: 20px;
+}
+
+p, ul, ol {
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+hr {
+  width: 100%;
+}
+
+table {
+  margin-top: 0;
+  width: 100%;
+}
+
+.table td, .table th {
+  border: none;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+#content {
+  border-style: solid;
+  border-color: #b38600;
+  border-width: 2px;
+  margin-bottom: 36px;
+}
+
+#navbar {
+  border-bottom: 1px solid #e7e7e7;
+  padding-top: 0;
+  padding-bottom: 0;
+  /*position: fixed;*/
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link a {
+  color: #664d00;
+  padding: 0;
+}
+
+.navbar .navbar-nav {
+  margin-top: 10px;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+#references li {
+  font-size: 14px;
+}
+
+#references ol {
+   padding-left: 5px;
+}
+
+/*#sponsors p {*/
+/*  font-size: 18px;*/
+/*  font-style: italic;*/
+/*}*/
+
+#pc td {
+  padding-right: 3em;
+  padding-left: 1em;
+}
+
+#program td {
+	padding: 10px;
+}
+
+#content {
+  padding-bottom: 60px;
+}
+
+.slp {
+  background: #fff;
+  padding: 10px;
+  border: 4px solid #eee;
+  box-shadow: rgb(204, 204, 204) 2px 2px 14px 0px;
+  margin-right: 10px;
+}
+
+.rocket {
+  background: #fff
+  padding: 10px;
+  border: 4px solid #eee;
+  box-shadow: rgb(204, 204, 204) 2px 2px 14px 0px;
+  margin-left: 10px;
+}
+
+.paper ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.col {
+  padding: 0;
+}
+
+.row {
+  margin: 20px;
+}
+
+table .time {
+  width: 160px;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 72px; /* fixed header height*/
+  margin: -72px 0 0; /* negative fixed header height */
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 900px;
+  }
+
+  #header {
+    width: 900px;
+  }
+
+  .navbar .navbar-nav {
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}

@@ -1,0 +1,37 @@
+---
+layout: default
+livestream: true
+slides_live_id: 38926831
+join_link: 
+---
+
+<div class="row justify-content-center">
+<p>You can also view the livestream on the <a href="https://iclr.cc/virtual/workshops_4.html" target="_blank">ICLR BAICS Portal</a>.</p>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col">
+  	{% if page.livestream and page.slides_live_id %}
+    <div id="presentation-embed-{{ page.slides_live_id }}" class="slp"></div>
+    <script src='https://slideslive.com/embed_presentation.js'></script>
+    <script>
+      embed = new SlidesLiveEmbed('presentation-embed-{{ page.slides_live_id }}', {
+      presentationId: '{{ page.slides_live_id }}',
+      autoPlay: false, // change to true to autoplay the embedded presentation
+      verticalEnabled: true,
+      allowHiddenControlsWhenPaused: true,
+      zoomRatio: 0.25,
+      hideTitle: true,
+      });
+    </script>
+    {% else %}
+    <div class="text-center"><i>The livestream has not yet started.</i></div>
+	{% endif %}
+  </div>
+  
+  <div class="col">
+    <div class="rocket">
+      <iframe frameborder="0" src="https://iclr.rocket.chat/channel/workshop_BAICS?layout=embedded" width="100%" height="680px"></iframe>
+    </div>
+  </div>
+</div>

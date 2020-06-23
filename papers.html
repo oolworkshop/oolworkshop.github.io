@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<div id="program">
+
+<div class="row">
+<p>For each paper being presented at the workshop, we will host (1) the pre-recorded presentation from SlidesLive, (2) a Rocket.Chat chatroom for text-based discussion, and (3) a Zoom meeting room. All of these can be found from each paper's landing page (which you can access by clicking on the title of the relevant paper).</p>
+<p>The Zoom meeting rooms will be open only during the poster session timeslots (see the <a href="/schedule.html">Schedule</a>), during which authors will join the meeting rooms to allow you to ask them questions face-to-face. We encourage you to first watch the presentation associated with the paper, and then join the Zoom meeting room to ask questions and engage in further discussion.</p>
+</div>
+
+{% for session in site.data.sessions %}
+<div class="row">
+<a name="session-{{ session.id }}"></a>
+<h3>{{ session.title }}</h3>
+<table class="table table-striped">
+<thead>
+     <tr>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>Track</th>
+          <th>PDF</th>
+</thead>
+<tbody>
+
+{% for paper in session.papers %}
+<tr>
+
+<td>
+<span><b><a href="/program/baics_{{ paper.id }}.html">{{ paper.title }}</a></b></span>
+{% if paper.kind == "oral" %}
+<span> (Oral)</span>
+{% elsif paper.kind == "spotlight" %}
+<span> (Spotlight)</span>
+{% endif %}
+</td>
+
+<td>
+{{ paper.authors }}
+</td>
+
+<td>
+{% if paper.track == "blue_sky" %}
+Blue Sky Ideas
+{% elsif paper.track == "research" %}
+Research
+{% endif %}
+</td>
+
+<td>
+{% if paper.camera_ready %}
+<a href="/pdf/BAICS_{{ paper.id }}.pdf" target="_blank">PDF</a>
+{% endif %}
+</td>
+
+
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+{% endfor %}
+
+</div>

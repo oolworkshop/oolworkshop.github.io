@@ -1,0 +1,362 @@
+- id: 1
+  papers:
+  - authors: Angela Radulescu, Bas van Opheusden, Frederick Callaway, Thomas Griffiths,
+      and James Hillis
+    camera_ready: true
+    cmt_id: 50
+    id: 33
+    kind: oral
+    session: 1
+    title: From heuristic to optimal models in naturalistic visual search
+    track: research
+  - authors: Hyunwoo Kim, Byeongchang Kim, and Gunhee Kim
+    camera_ready: true
+    cmt_id: 11
+    id: 5
+    kind: oral
+    session: 1
+    title: Public Self-consciousness for Endowing Consistent Persona to Dialogue Agents
+    track: research
+  - authors: Alexander D Tschanz, Beren Millidge, Anil Seth, and Christopher Buckley
+    camera_ready: true
+    cmt_id: 57
+    id: 37
+    kind: spotlight
+    session: 1
+    title: Reinforcement Learning through Active Inference
+    track: research
+  - authors: Antonio Loquercio, Alexey Dosovitskiy, and Davide Scaramuzza
+    camera_ready: true
+    cmt_id: 46
+    id: 30
+    kind: spotlight
+    session: 1
+    title: Global-Local Network for Learning Depth Via Interaction
+    track: research
+  - authors: Eugene Kharitonov, Rahma Chaabouni, Diane Bouchacourt, and Marco Baroni
+    camera_ready: true
+    cmt_id: 4
+    id: 0
+    kind: spotlight
+    session: 1
+    title: Entropy Minimization In Emergent Languages
+    track: research
+  - authors: Guy Ben-Yosef, Gabriel Kreiman, and Shimon Ullman
+    camera_ready: true
+    cmt_id: 6
+    id: 1
+    kind: spotlight
+    session: 1
+    title: What can human minimal videos tell us about dynamic recognition models?
+    track: research
+  - authors: Jesse Geerts, Kimberly Stachenfeld, and Neil Burgess
+    camera_ready: true
+    cmt_id: 48
+    id: 31
+    kind: spotlight
+    session: 1
+    title: Probabilistic Successor Features Allow for Flexible Behaviour
+    track: research
+  - authors: Jessica Hamrick and Shakir Mohamed
+    camera_ready: true
+    cmt_id: 12
+    id: 6
+    kind: spotlight
+    session: 1
+    title: Levels of Analysis for Machine Learning
+    track: blue_sky
+  - authors: Otilia Stretcu, Anthony Platanios, Tom Mitchell, and Barnabas Poczos
+    camera_ready: true
+    cmt_id: 41
+    id: 26
+    kind: spotlight
+    session: 1
+    title: Coarse-to-Fine Curriculum Learning for Classification
+    track: research
+  - authors: Ronen Tamari, Gabriel Stanovsky, Dafna Shahaf, and Reut Tsarfaty
+    camera_ready: true
+    cmt_id: 40
+    id: 25
+    kind: spotlight
+    session: 1
+    title: 'Ecological Semantics: Programming Environments for Situated Language Understanding'
+    track: blue_sky
+  - authors: Yevgen Matusevych, Herman Kamper, and Sharon Goldwater
+    camera_ready: true
+    cmt_id: 38
+    id: 23
+    kind: spotlight
+    session: 1
+    title: Analyzing acoustic word embeddings
+    track: research
+  - authors: Anna Truzzi and Rhodri Cusack
+    camera_ready: true
+    cmt_id: 22
+    id: 13
+    kind: poster
+    session: 1
+    title: 'Convolutional Neural Networks as a Model of Visual Activity in The Brain:
+      Greater Contribution of Architecture Than Learned Weights'
+    track: research
+  - authors: Carolyn J Anderson and Tessa Patapoutian
+    camera_ready: true
+    cmt_id: 25
+    id: 15
+    kind: poster
+    session: 1
+    title: Can neural network language models understand spatial perspective?
+    track: research
+  - authors: Luis S Piloto, Ari Weinstein, Peter Battaglia, and Matthew Botvinick
+    camera_ready: true
+    cmt_id: 53
+    id: 35
+    kind: poster
+    session: 1
+    title: Learning Intuitive Physics Through Objects
+    track: research
+  - authors: Max A Nelson
+    camera_ready: true
+    cmt_id: 15
+    id: 9
+    kind: poster
+    session: 1
+    title: Learning Hierarchical Syntactic Transformations with Encoder-Decoder Networks
+    track: research
+  - authors: Michael Lingelbach, Damian Mrowca, Nick Haber, Li Fei-Fei, and Daniel
+      Yamins
+    camera_ready: true
+    cmt_id: 58
+    id: 38
+    kind: poster
+    session: 1
+    title: Towards Curiosity-Driven Learning of Physical Dynamics
+    track: research
+  - authors: Ozan Catal, Tim Verbelen, Cedric De Boom, Bart Dhoedt, and Samuel T Wauthier
+    camera_ready: true
+    cmt_id: 13
+    id: 7
+    kind: poster
+    session: 1
+    title: Deep Active Inference for Autonomous Robot Navigation
+    track: research
+  - authors: Parsa Mahmoudieh, Trevor Darrell, and Deepak Pathak
+    camera_ready: true
+    cmt_id: 63
+    id: 42
+    kind: poster
+    session: 1
+    title: Weakly-Supervised Trajectory Segmentation for Learning Reusable Skills
+    track: research
+  - authors: Prabhu Prakash Kagitha
+    camera_ready: true
+    cmt_id: 20
+    id: 11
+    kind: poster
+    session: 1
+    title: On Systematic Generalization of Sequence to Sequence Models
+    track: research
+  - authors: Satyam Mohla, Anshul Nasery, Biplab Banerjee, and Subhasis Chaudhuri
+    camera_ready: true
+    cmt_id: 42
+    id: 27
+    kind: poster
+    session: 1
+    title: 'CognitiveCNN: Mimicking Human Cognitive Models to resolve Texture-Shape
+      Bias'
+    track: research
+  - authors: Zhengwei Wang, Qi She, Alan Smeaton, Tomas Ward, and Graham Healy
+    camera_ready: true
+    cmt_id: 33
+    id: 21
+    kind: poster
+    session: 1
+    title: A Neuro-AI Interface for Evaluating Generative Adversarial Networks
+    track: research
+  title: Session 1 (2-3pm GMT)
+- id: 2
+  papers:
+  - authors: Eliza Kosoy, Jasmine Collins, David Chan, Jessica Hamrick, Sandy H Huang,
+      John F Canny, and Alison Gopnik
+    camera_ready: true
+    cmt_id: 39
+    id: 24
+    kind: oral
+    session: 2
+    title: 'Exploring Exploration: Comparing Children with RL agents in Unified Environments'
+    track: blue_sky
+  - authors: Gido M van de Ven, Hava Siegelmann, and Andreas Tolias
+    camera_ready: true
+    cmt_id: 14
+    id: 8
+    kind: oral
+    session: 2
+    title: Brain-like replay for continual learning with artificial neural networks
+    track: research
+  - authors: Adam Marblestone, Yan Wu, and Greg Wayne
+    camera_ready: true
+    cmt_id: 7
+    id: 2
+    kind: spotlight
+    session: 2
+    title: 'Product Kanerva Machines: Factorized Bayesian Memory'
+    track: research
+  - authors: Colin Conwell, Michael Buice, Andrei Barbu, and George Alvarez
+    camera_ready: true
+    cmt_id: 32
+    id: 20
+    kind: spotlight
+    session: 2
+    title: Model Zoology and Neural Taskonomy for Better Characterizing Mouse Visual
+      Cortex
+    track: research
+  - authors: Daniel Yamins, Kun Ho Kim, Megumi Sano, Julian De Freitas, and Nick Haber
+    camera_ready: true
+    cmt_id: 60
+    id: 40
+    kind: spotlight
+    session: 2
+    title: Towards modeling the developmental variability of human attention
+    track: blue_sky
+  - authors: Dung Nguyen, Svetha Venkatesh, and Truyen Tran
+    camera_ready: true
+    cmt_id: 43
+    id: 28
+    kind: spotlight
+    session: 2
+    title: Theory of Mind with Guilt Aversion Facilitates Cooperative Reinforcement
+      Learning
+    track: research
+  - authors: Konstantinos Mitsopoulos, Sterling Somers, Christian Lebiere, and Robert
+      Thomson
+    camera_ready: true
+    cmt_id: 54
+    id: 36
+    kind: spotlight
+    session: 2
+    title: Cognitive Architectures for Introspecting Deep Reinforcement Learning Agents
+    track: blue_sky
+  - authors: Owen Lewis
+    camera_ready: true
+    cmt_id: 59
+    id: 39
+    kind: spotlight
+    session: 2
+    title: Mental models for neural models
+    track: blue_sky
+  - authors: Simon Segert, Mariano Tepper, Javier S Turek, and Jonathan Cohen
+    camera_ready: true
+    cmt_id: 9
+    id: 4
+    kind: spotlight
+    session: 2
+    title: Relaxed Graph Matching for Analogical Reasoning
+    track: research
+  - authors: Aida Nematzadeh, Sebastian Ruder, and Dani Yogatama
+    camera_ready: true
+    cmt_id: 36
+    id: 22
+    kind: poster
+    session: 2
+    title: On Memory in Human and Artificial Language Processing Systems
+    track: blue_sky
+  - authors: Ajaz A Bhat
+    camera_ready: true
+    cmt_id: 49
+    id: 32
+    kind: poster
+    session: 2
+    title: Causal Learning by a Robot with Semantic-Episodic Memory in an Aesop's
+      Fable Experiment
+    track: research
+  - authors: "Alex Hern\xE1ndez-Garc\xEDa, Peter K\xF6nig, and Tim C. Kietzmann"
+    camera_ready: true
+    cmt_id: 8
+    id: 3
+    kind: poster
+    session: 2
+    title: Learning robust visual representations using data augmentation invariance
+    track: research
+  - authors: Bernadette K Bucher, Siddharth Singh, Clelia de Mulatier, Kostas Daniilidis,
+      and Vijay Balasubramanian
+    camera_ready: true
+    cmt_id: 21
+    id: 12
+    kind: poster
+    session: 2
+    title: Curiosity Increases Equality in Competitive Resource Allocation
+    track: research
+  - authors: Freddie Bickford Smith, Xiaoliang Luo, Brett Roads, and Bradley Love
+    camera_ready: true
+    cmt_id: 23
+    id: 14
+    kind: poster
+    session: 2
+    title: The perceptual boost of visual attention is task-dependent in naturalistic
+      settings
+    track: research
+  - authors: Himanshu Sahni, Shray Bansal, and Charles Isbell
+    camera_ready: true
+    cmt_id: 30
+    id: 18
+    kind: poster
+    session: 2
+    title: Attention Driven Dynamic Memory Maps
+    track: research
+  - authors: Jacob L Russin, Randall O'Reilly, and Yoshua Bengio
+    camera_ready: true
+    cmt_id: 18
+    id: 10
+    kind: poster
+    session: 2
+    title: Deep Learning Needs a Prefrontal Cortex
+    track: blue_sky
+  - authors: Kun Ho Kim, Megumi Sano, Julian De Freitas, Nick Haber, and Daniel Yamins
+    camera_ready: true
+    cmt_id: 27
+    id: 16
+    kind: poster
+    session: 2
+    title: Active World Model Learning in Agent-rich Environments with Progress Curiosity
+    track: research
+  - authors: Payel Das, Brian Quanz, Pin-Yu Chen, Jae-wook Ahn, and Dhruv Shah
+    camera_ready: true
+    cmt_id: 51
+    id: 34
+    kind: poster
+    session: 2
+    title: Toward A Neuro-Inspired Creative Decoder
+    track: research
+  - authors: Sara Hooker, Aaron Courville, Andrea Frome, and Yann Dauphin
+    camera_ready: true
+    cmt_id: 31
+    id: 19
+    kind: poster
+    session: 2
+    title: What does a pruned deep neural network "forget"?
+    track: research
+  - authors: Sashank Santhanam and Samira Shaikh
+    camera_ready: true
+    cmt_id: 28
+    id: 17
+    kind: poster
+    session: 2
+    title: Modeling Conversation Context by Adapting Cognitive Architectures
+    track: research
+  - authors: Timothy Tadros, Giri Krishnan, and Maxim Bazhenov
+    camera_ready: true
+    cmt_id: 45
+    id: 29
+    kind: poster
+    session: 2
+    title: Simulated sleep helps to generalize knowledge in a spiking network trained
+      with spike-timing dependent plasticity
+    track: research
+  - authors: Tiwalayo Eisape, Roger Levy, Joshua B. Tenenbaum, and Noga Zaslavsky
+    camera_ready: true
+    cmt_id: 61
+    id: 41
+    kind: poster
+    session: 2
+    title: Toward Human-like Object Naming in Artificial Neural Systems
+    track: research
+  title: Session 2 (9-10pm GMT)
