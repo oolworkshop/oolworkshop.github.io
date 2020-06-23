@@ -22,6 +22,7 @@ def format_authors(x):
     first = ", ".join(authors[:-1])
     last = authors[-1]
     x = "{}, and {}".format(first, last)
+  x = x.replace("*", "")
   return x
 
 
