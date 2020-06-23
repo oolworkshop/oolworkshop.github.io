@@ -22,7 +22,6 @@ def format_authors(x):
     first = ", ".join(authors[:-1])
     last = authors[-1]
     x = "{}, and {}".format(first, last)
-  
   return x
 
 
@@ -31,14 +30,14 @@ def load_presentation_data():
     data["session_title"] = data["session"].replace({
         "invited": "Invited Talk",
         "opening": "Opening Remarks",
-        "2-3 pm GMT": "Session 1 (2-3pm GMT)",
-        "9-10 pm GMT": "Session 2 (9-10pm GMT)",
+        "11-11:30 am": "Session 1 (11-11:30 am ?)",
+        "3-3:30 pm": "Session 2 (3-3:30 pm ?)",
     })
     data["session_id"] = data["session"].replace({
         "invited": 0,
         "opening": 0,
-        "2-3 pm GMT": 1,
-        "9-10 pm GMT": 2,
+        "11-11:30 am": 1,
+        "3-3:30 pm": 2,
     })
     data = data.drop(columns=["session"])
     data["authors"] = data["authors"].apply(format_authors)
