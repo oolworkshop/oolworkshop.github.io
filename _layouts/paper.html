@@ -23,13 +23,15 @@ session_2: false
 <!--			Opening Remarks-->
 <!--			{% endif %}-->
 <!--		</span>-->
-		{% if page.kind == "oral" %}
+		{% if page.track == "invited" %}
+		<span> (Invited Talk)</span>
+		{% elsif page.kind == "oral" %}
 		<span> (Oral)</span>
 		{% elsif page.kind == "spotlight" %}
 		<span> (Spotlight)</span>
 		{% endif %}
 		</li>
-
+		<li>
 		{% if page.session_id > 0 %}
 		<li>
 		{% if page.camera_ready %}
@@ -55,15 +57,14 @@ session_2: false
 <!--		</li>-->
 <!--		{% endif %}-->
 
-		{% if page.track == "invited" or page.track == "opening" %}
-		<li>
-		<span><a href="/slides/BAICS_{{ page.id }}.pdf" target="_blank">Slides</a></span>
-		</li>
-		{% endif %}
+<!--		{% if page.track == "invited" or page.track == "opening" %}-->
+<!--		<li>-->
+<!--		<span><a href="/slides/BAICS_{{ page.id }}.pdf" target="_blank">Slides</a></span>-->
+<!--		</li>-->
+<!--		{% endif %}-->
 		<li></br>
 		<span> <p align=justify>{{ page.abstract }} </p> </span>
 		</li>
-
 	</ul>
 </div>
 </div>
