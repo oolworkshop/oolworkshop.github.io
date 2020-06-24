@@ -20,6 +20,7 @@ kind: {kind}
 session_id: {session_id}
 session_title: "{session_title}"
 title: "{title}"
+abstract: "{abstract}"
 track: {track}
 live: {live}
 ---
@@ -97,6 +98,7 @@ def make_program():
 
         data["camera_ready"] = str(data["camera_ready"]).lower()
         data["title"] = data["title"].replace("\"", "\\\"")
+        data["abstract"] = data["abstract"]
         data["live"] = str(data["live"]).lower()
 
         data["rocket_id"] = "ool_channel_{:02d}".format(data["unique_id"])
