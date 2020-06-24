@@ -1,6 +1,23 @@
 - id: 1
   papers:
-  - authors: Eric Crawford and Joelle Pineau
+  - abstract: The physical world can be decomposed into discrete 3D objects. Reasoning
+      about the world in terms of these objects may provide a number of advantages
+      to learning agents. For example, objects interact compositionally, and this
+      can support a strong form of generalization. Knowing properties of individual
+      objects and rules for how those properties interact, one can predict the effects
+      that objects will have on one another even if one has never witnessed an interaction
+      between the types of objects in question. The promise of object-level reasoning
+      has fueled a recent surge of interest in systems capable of learning to extract
+      object-oriented representations from perceptual input without supervision. However,
+      the vast majority of such systems treat objects as 2-dimensional entities, effectively
+      ignoring their 3-dimensional nature. In the current work, we propose a probabilistic,
+      object-oriented model equipped with the inductive bias that the world is made
+      up of 3D objects moving through a 3D world, and make a number of structural
+      adaptations which take advantage of that bias. In a series of experiments we
+      show that this system is capable not only of segmenting objects from the perceptual
+      stream, but also of extracting 3D information about objects (e.g. depth) and
+      of tracking them through 3D space.
+    authors: Eric Crawford and Joelle Pineau
     camera_ready: false
     cmt_id: 19
     id: 19
@@ -8,7 +25,22 @@
     session: 1
     title: Learning 3D Object-Oriented World Models from Unlabeled Videos
     track: research
-  - authors: Silviu Pitis, Elliot Creager, and Animesh Garg
+  - abstract: Many dynamic processes, including common scenarios in robotic control
+      and reinforcement learning (RL), involve a set of interacting subprocesses.
+      Though the subprocesses are not independent, their interactions are often sparse,
+      and the dynamics at any given time step can often be decomposed into locally
+      independent causal mechanisms. Such local causal structures can be leveraged
+      to improve the sample efficiency of sequence prediction and off-policy reinforcement
+      learning. We formalize this by introducing local causal models (LCMs), which
+      are induced from a global causal model by conditioning on a subset of the state
+      space. We propose an approach to inferring these structures given an object-oriented
+      state representation, as well as a novel algorithm for model-free Counterfactual
+      Data Augmentation (CoDA). CoDA uses local structures and an experience replay
+      to generate counterfactual experiences that are causally valid in the global
+      model. We find that CoDA significantly improves the performance of RL agents
+      in locally factored tasks, including the batch-constrained and goal-conditioned
+      settings.
+    authors: Silviu Pitis, Elliot Creager, and Animesh Garg
     camera_ready: false
     cmt_id: 17
     id: 17
@@ -16,7 +48,20 @@
     session: 1
     title: Counterfactual Data Augmentation using Locally Factored Dynamics
     track: research
-  - authors: Yizhe Wu, Sudhanshu Kasewa, Oliver M Groth, Sasha Salter, Li Sun, Oiwi
+  - abstract: Given visual observations of a reaching task together with a stick-like
+      tool, we propose a novel approach that learns to exploit task-relevant object
+      affordances by combining generative modelling with a task-based performance
+      predictor. The embedding learned by the generative model captures the factors
+      of variation in object geometry, e.g. length, width, and configuration. The
+      performance predictor identifies sub-manifolds correlated with task success
+      in a weakly supervised manner. Using a 3D simulation environment, we demonstrate
+      that traversing the latent space in this task-driven way results in appropriate
+      tool geometries for the task at hand. Our results suggest that affordances are
+      encoded along smooth trajectories in the learned latent space. Given only high-level
+      performance criteria (such as task success), accessing these emergent affordances
+      via gradient descent enables the agent to manipulate learned object geometries
+      in a targeted and deliberate way.
+    authors: Yizhe Wu, Sudhanshu Kasewa, Oliver M Groth, Sasha Salter, Li Sun, Oiwi
       Parker Jones, and Ingmar Posner
     camera_ready: false
     cmt_id: 7
@@ -25,7 +70,18 @@
     session: 1
     title: Learning Affordances in Object-Centric Generative Models
     track: research
-  - authors: Adam R Kosiorek, Hyunjik Kim, and Danilo Jimenez Rezende
+  - abstract: "A  set  is  an  unordered  collection  of  unique elements\u2014and\
+      \ yet many machine learning models that generate sets impose an implicit or\
+      \ explicit ordering. Since model performance can depend on the choice of ordering,\
+      \ any particular ordering can lead to sub-optimal results.  An alternative solution\
+      \ is to use a permutation-equivariant set generator, which does not specify\
+      \ an order-ing. An example of such a generator is the DeepSet Prediction Network\
+      \ (DSPN).  We introduce the Transformer Set Prediction Network (TSPN), a flexible\
+      \ permutation-equivariant model for set prediction based on the transformer,\
+      \ that builds upon and outperforms DSPN in the quality of predicted set elements\
+      \ and in the accuracy of their predicted sizes. We test our model on MNIST-as-point-clouds\
+      \ (SET-MNIST) for point-cloud generation and on CLEVR for object detection."
+    authors: Adam R Kosiorek, Hyunjik Kim, and Danilo Jimenez Rezende
     camera_ready: false
     cmt_id: 31
     id: 31
@@ -33,7 +89,15 @@
     session: 1
     title: Conditional Set Generation with Transformers
     track: research
-  - authors: "Anand Gopalakrishnan, Sjoerd van Steenkiste, and J\xFCrgen Schmidhuber"
+  - abstract: We propose a novel approach to representation learning based on object
+      keypoints. It leverages the predictability of local image regions from spatial
+      neighborhoods to identify salient regions that correspond to object parts, which
+      are then converted to keypoints. Unlike prior approaches, this does not overly
+      bias the keypoints to focus on a particular property of objects.  We demonstrate
+      the efficacy of our approach on Atari where we find that it learns keypoints
+      corresponding to the most salient object parts and is more robust to certain
+      visual distractors.
+    authors: "Anand Gopalakrishnan, Sjoerd van Steenkiste, and J\xFCrgen Schmidhuber"
     camera_ready: false
     cmt_id: 9
     id: 9
@@ -41,7 +105,19 @@
     session: 1
     title: Unsupervised Object Keypoint Learning using Local Spatial Predictability
     track: research
-  - authors: Fei Deng, Zhuo Zhi, and Sungjin Ahn
+  - abstract: Compositional structures between parts and objects are inherent in natural
+      scenes. Recent work on representation learning has succeeded in modeling scenes
+      as composition of objects, but further decomposition of objects into parts and
+      subparts has largely been overlooked. In this paper, we propose RICH, the first
+      deep latent variable model for learning Representation of Interpretable Compositional
+      Hierarchies. At the core of RICH is a latent scene graph representation that
+      organizes the entities of a scene into a tree according to their compositional
+      relationships. During inference, RICH takes a top-down approach, allowing higher-level
+      representation to guide lower-level decomposition in case there is compositional
+      ambiguity. In experiments on images containing multiple compositional objects,
+      we demonstrate that RICH is able to learn the latent compositional hierarchy,
+      generate imaginary scenes, and improve data efficiency in downstream tasks.
+    authors: Fei Deng, Zhuo Zhi, and Sungjin Ahn
     camera_ready: false
     cmt_id: 30
     id: 30
@@ -50,7 +126,17 @@
     title: Hierarchical Decomposition and Generation of Scenes with Compositional
       Objects
     track: research
-  - authors: Karl Stelzner, Kristian Kersting, and Adam R Kosiorek
+  - abstract: Groups of entities are naturally represented as sets, but generative
+      models usually treat them as independent from each other or as sequences. This
+      either over-simplifies the problem, or imposes an order to the otherwise unordered
+      collections, which has to be accounted for in loss computation. We therefore
+      introduce GAST - a GAN for sets capable of generating variable-sized sets in
+      a permutation-equivariant manner, while accounting for dependencies between
+      set elements. It avoids the problem of formulating a distance metric between
+      sets by using a permutation-invariant discriminator. When evaluated on a dataset
+      of regular polygons and on MNIST point clouds, GAST outperforms graph-convolution-based
+      GANs in sample fidelity, while showing good generalization to novel set sizes.
+    authors: Karl Stelzner, Kristian Kersting, and Adam R Kosiorek
     camera_ready: false
     cmt_id: 32
     id: 32
@@ -58,7 +144,16 @@
     session: 1
     title: Generative Adversarial Set Transformers
     track: research
-  - authors: Lewis SG Smith, Lisa Schut, Yarin Gal, and Mark van der Wilk
+  - abstract: '`Capsule'' models try to explicitly represent the poses of objects,
+      enforcing a linear relationship between an objects pose and those of its constituent
+      parts. This modelling assumption should lead to robustness to viewpoint changes
+      since the object-component relationships are invariant to the poses of the object.
+      We describe a probabilistic generative model that encodes these assumptions.
+      Our probabilistic formulation separates the generative assumptions of the model
+      from the inference scheme, which we derive from a variational bound. We experimentally
+      demonstrate the applicability of our unified objective, and the use of test
+      time optimisation to solve problems inherent to amortised inference.'
+    authors: Lewis SG Smith, Lisa Schut, Yarin Gal, and Mark van der Wilk
     camera_ready: false
     cmt_id: 6
     id: 6
@@ -66,7 +161,15 @@
     session: 1
     title: 'Capsule Networks: A Generative Probabilistic Perspective'
     track: research
-  - authors: Steven D James, Benjamin Rosman, and George Konidaris
+  - abstract: We propose a method for autonomously learning an object-centric representation
+      of a high-dimensional environment that is suitable for planning. Such abstractions
+      can be immediately transferred between tasks that share the same types of objects,
+      resulting in agents that require fewer samples to learn a model of a new task.
+      We demonstrate our approach on a series of Minecraft tasks to learn object-centric
+      representations - directly from pixel data - that can be leveraged to quickly
+      solve new tasks. The resulting learned representations enable the use of a task-level
+      planner, resulting in an agent capable of forming complex, long-term plans.
+    authors: Steven D James, Benjamin Rosman, and George Konidaris
     camera_ready: false
     cmt_id: 4
     id: 4
@@ -74,7 +177,22 @@
     session: 1
     title: Learning Object-Centric Representations for High-Level Planning in Minecraft
     track: research
-  - authors: William Agnew, Christopher Xie, Aaron T Walsman, Octavian V Murad, Yubo
+  - abstract: Learning-based 3D object reconstruction enables single- or few-shot
+      estimation of 3D object models. For robotics this holds the potential to allow
+      model-based methods to rapidly adapt to novel objects and scenes. Existing 3D
+      reconstruction techniques optimize for visual reconstruction fidelity, typically
+      measured by chamfer distance or voxel IOU. We find that when applied to realistic,
+      cluttered robotics environments these systems produce reconstructions with low
+      physical realism, resulting in poor task performance when used for model-based
+      control. We propose ARM an amodal 3D reconstruction system that introduces (1)
+      an object stability prior over the shapes of groups of objects, (2) an object
+      connectivity prior over object shapes, and (3) a multi-channel input representation
+      and reconstruction objective that allows for reasoning over relationships between
+      groups of objects. By using these priors over the physical properties of objects,
+      our system improves reconstruction quality not just by standard visual metrics,
+      but also improves performance of model-based control on a variety of robotics
+      manipulation tasks in challenging, cluttered environments.
+    authors: William Agnew, Christopher Xie, Aaron T Walsman, Octavian V Murad, Yubo
       Wang, Pedro Domingos, and Siddhartha Srinivasa
     camera_ready: false
     cmt_id: 28
@@ -83,7 +201,20 @@
     session: 1
     title: Amodal 3D Reconstruction for Robotic Manipulation via Stability and Connectivity
     track: research
-  - authors: William P McCarthy and Judy Fan
+  - abstract: The ability to build a wide array of physical structures, from sand
+      castles to skyscrapers, is a hallmark of human intelligence. What computational
+      mechanisms enable humans to create such complex and varied structures? Here
+      we conduct an empirical investigation of how people reason about challenging
+      physical assembly problems and update their policies across repeated attempts.
+      Participants viewed silhouettes of 8 unique structures in a 2D virtual environment
+      simulating rigid-body physics, and aimed to reconstruct each one using a fixed
+      inventory of rectangular blocks. We found that people learned to build each
+      target structure more accurately across repeated attempts, and that these gains
+      reflect both group-level convergence upon a smaller set of viable policies,
+      as well as error-dependent updating of each individual's policy. Taken together,
+      our study provides a novel benchmark for evaluating how well algorithmic models
+      of physical reasoning and planning correspond to human behavior.
+    authors: William P McCarthy and Judy Fan
     camera_ready: false
     cmt_id: 14
     id: 14
@@ -91,7 +222,16 @@
     session: 1
     title: Rapid policy updating in human physical construction
     track: research
-  - authors: "Aleksandar Stanic, Sjoerd van Steenkiste, and J\xFCrgen Schmidhuber"
+  - abstract: Common-sense physical reasoning requires learning about the interactions
+      of objects and their dynamics. The notion of an abstract object, however, encompasses
+      a wide variety of physical objects that differ greatly in terms of the complex
+      behaviors they support. To address this, we propose a novel approach to physical
+      reasoning that models objects as hierarchies of parts that may locally behave
+      separately, but also act more globally as a single whole. Unlike prior approaches,
+      our method learns in an unsupervised fashion directly from raw visual images
+      to discover objects, parts, and their relations. We demonstrate how it improves
+      over a strong baseline at modeling synthetic and real-world physical dynamics.
+    authors: "Aleksandar Stanic, Sjoerd van Steenkiste, and J\xFCrgen Schmidhuber"
     camera_ready: false
     cmt_id: 24
     id: 24
@@ -99,7 +239,19 @@
     session: 1
     title: Hierarchical Relational Inference
     track: research
-  - authors: Andrii Zadaianchuk and Georg Martius
+  - abstract: "In recent years, several methods for learning disentangled representations\
+      \ (with respect to the underlying factors of variation) were proposed. One of\
+      \ them, Independently Controllable Factors (ICF), is learning a representation\
+      \ that is independently controllable. While it was successfully applied in stable\
+      \ grid-world environments, it is not able to account for the dynamics of factors\
+      \ of variation or other agents\u2019 influence. We generalize this approach\
+      \ to situations with predictable changes in the environment that do not depend\
+      \ on the agent. In this situation, we want to learn policies that maximally\
+      \ change the dynamics of one component of the representation with minimal change\
+      \ of the dynamics of other components. We apply this approach to improve active,\
+      \ unsupervised representation learning of object-centric representations in\
+      \ environments with dynamics."
+    authors: Andrii Zadaianchuk and Georg Martius
     camera_ready: false
     cmt_id: 16
     id: 16
@@ -107,7 +259,24 @@
     session: 1
     title: Unsupervised Learning of Independently Controllable Dynamic Components
     track: research
-  - authors: Ari Seff, Yaniv Ovadia, Wenda Zhou, and Ryan P Adams
+  - abstract: 'Parametric computer-aided design (CAD) is the dominant paradigm in
+      mechanical engineering for physical design. Distinguished by relational geometry,
+      parametric CAD models begin as two-dimensional sketches consisting of geometric
+      primitives (e.g., line segments, arcs) and explicit constraints between them
+      (e.g., coincidence, perpendicularity) that form the basis for three-dimensional
+      construction operations. Training machine learning models to reason about and
+      synthesize parametric CAD designs has the potential to reduce design time and
+      enable new design workflows. Additionally, parametric CAD designs can be viewed
+      as instances of constraint programming and they offer a well-scoped test bed
+      for exploring ideas in program synthesis and induction. To facilitate this research,
+      we introduce SketchGraphs, a collection of ten million sketches extracted from
+      real-world CAD models coupled with an open-source data processing pipeline.
+      Each sketch is represented as a geometric constraint graph where edges denote
+      designer-imposed geometric relationships between primitives, the nodes of the
+      graph. We demonstrate and establish benchmarks for two use cases of the dataset:
+      generative modeling of sketches and conditional generation of likely constraints
+      given unconstrained geometry.'
+    authors: Ari Seff, Yaniv Ovadia, Wenda Zhou, and Ryan P Adams
     camera_ready: false
     cmt_id: 33
     id: 33
@@ -116,7 +285,22 @@
     title: 'SketchGraphs: A Large-Scale Dataset for Modeling Relational Geometry in
       Computer-Aided Design'
     track: research
-  - authors: "Boris Knyazev, Harm De Vries, C\u0103t\u0103lina Cangea, Graham Taylor,\
+  - abstract: Inferring objects and their relationships from an image is useful in
+      many applications at the intersection of vision and language. Due to a long
+      tail data distribution, the task is challenging, with the inevitable appearance
+      of zero-shot compositions of objects and relationships at test time. Current
+      models often fail to properly understand a scene in such cases, as during training
+      they only observe a tiny fraction of the distribution corresponding to the most
+      frequent compositions. This motivates us to study whether increasing the diversity
+      of the training distribution, by generating replacement for parts of real scene
+      graphs, can lead to better generalization? We employ generative adversarial
+      networks (GANs) conditioned on scene graphs to generate augmented visual features.
+      To increase their diversity, we propose several strategies to perturb the conditioning.
+      One of them is to use a language model, such as BERT, to synthesize plausible
+      yet still unlikely scene graphs. By evaluating our model on Visual Genome, we
+      obtain both positive and negative results. This prompts us to make several observations
+      that can potentially lead to further improvements.
+    authors: "Boris Knyazev, Harm De Vries, C\u0103t\u0103lina Cangea, Graham Taylor,\
       \ Aaron Courville, and Eugene Belilovsky"
     camera_ready: false
     cmt_id: 21
@@ -125,7 +309,19 @@
     session: 1
     title: Generative Graph Perturbations for Scene Graph Prediction
     track: research
-  - authors: Evan Racah and Sarath Chandar
+  - abstract: Unsupervised extraction of objects from low-level visual data is an
+      important goal for further progress in machine learning. Existing approaches
+      for representing objects without labels use structured generative models with
+      static images. These methods focus a large amount of their capacity on reconstructing
+      unimportant background pixels, missing low contrast or small objects. Conversely,
+      we present a new method that avoids losses in pixel space and over-reliance
+      on the limited signal a static image provides. Our approach takes advantage
+      of objects' motion by learning a discriminative, time-contrastive loss in the
+      space of slot representations, attempting to force each slot to not only capture
+      entities that move, but capture distinct objects from the other slots. Moreover,
+      we introduce a new quantitative evaluation metric to measure how ``diverse''
+      a set of slot vectors are, and use it to evaluate our model on 20 Atari games.
+    authors: Evan Racah and Sarath Chandar
     camera_ready: false
     cmt_id: 29
     id: 29
@@ -133,7 +329,17 @@
     session: 1
     title: 'Slot Contrastive Networks: A Contrastive Approach for Representing Objects'
     track: research
-  - authors: Guy Davidson and Brenden M Lake
+  - abstract: 'We offer a systematic comparison of the ability of neural network architectures
+      to learn relations from collections of objects. Relational inference is a crucial
+      component of human reasoning from early development, and while the deep learning
+      community has not ignored the subject, it is often integrated into performing
+      a task, such as CLEVR. We generate simple object representations and evaluate
+      models on their ability to learn these relations in the abstract, which allows
+      us to focus on the relevance of their inductive biases for such reasoning. Our
+      results highlight vast differences between our models, none of which attain
+      perfect performance across our evaluations, suggesting there is room for improvement
+      in this problem. '
+    authors: Guy Davidson and Brenden M Lake
     camera_ready: false
     cmt_id: 20
     id: 20
@@ -141,7 +347,18 @@
     session: 1
     title: Systematically Comparing Neural Network Architectures in Relation Leaning
     track: research
-  - authors: Haoliang Wang and Judy Fan
+  - abstract: 'The ability to represent semantic structure in the environment ---
+      objects, parts, and relations --- is a core aspect of human visual perception
+      and cognition. As a testament to this ability, humans are capable of expressing
+      rich conceptual knowledge in simple iconic images. Here we leverage recent advances
+      in program synthesis to develop a self-supervised and data-efficient algorithm
+      for learning the the part-based structure of objects, as represented by graphics
+      programs. Our algorithm iteratively learns higher-order subroutines that can
+      be used to more compactly represent these objects, exploiting commonalities
+      between learned subroutines to infer a part-based grammar. Our experiments explore
+      how the resulting library of learned subroutines is jointly determined by the
+      data distribution and the cost of learning additional subroutines. '
+    authors: Haoliang Wang and Judy Fan
     camera_ready: false
     cmt_id: 15
     id: 15
@@ -149,7 +366,19 @@
     session: 1
     title: Library learning for structured object concepts
     track: research
-  - authors: Jack Brady and Geoffrey Roeder
+  - abstract: One of the ultimate goals of unsupervised representation learning is
+      identifiability, or the ability to recover the true generating factors for a
+      set of observations. For object-oriented representations, learning an identifiable
+      representation for the constituent objects in a scene would mean that we have
+      effectively learned each entity's true latent code. Recent breakthroughs in
+      nonlinear ICA have shown how identifiability can be achieved in deep latent
+      variable models. Currently, however, no image datasets exist which allow for
+      quantitatively evaluating the performance of models based on the proposed theories.
+      To this end, we introduce iSprites, a dataset for identifiable single- and multi-object
+      representation learning. Contrary to previously published datasets, iSprites
+      facilitates the testing of representation learning methods which are theoretically
+      identifiable, thus providing a bridge between recent theory and practical applicability.
+    authors: Jack Brady and Geoffrey Roeder
     camera_ready: false
     cmt_id: 25
     id: 25
@@ -157,7 +386,25 @@
     session: 1
     title: 'iSprites: A Dataset for Identifiable Multi-Object Representation Learning'
     track: research
-  - authors: Kexin Yi, Toru Lin, and Phillip Isola
+  - abstract: Rigid body systems are among the most important subjects of study in
+      physics and are widely applied in both simulated and real-world applications.
+      As suggested by theory of classical mechanics, the motion of a rigid body system
+      is strongly governed by its geometric constraints, i.e. how different rigid
+      components are connected and allowed to move with respect to each other. Extracting
+      these information from observations and applying them to the system's dynamics
+      modeling are important steps towards a deeper and more structured understanding
+      of the physical world. In this work, we propose a computational framework that
+      both extracts the geometric constraints and models the forward dynamics of rigid
+      body systems starting from raw pixel observations. Our model first extracts
+      a hierarchical representation, facilitated by keypoints and their groupings,
+      for describing the system's constraints from visual observations in an unsupervised
+      fashion. Then, a dynamics model aware of these constraints is applied to predict
+      the forward dynamics of the state representation. Finally, a reconstruction
+      network recovers the visual frames from the predicted states. Experiment results
+      on classic rigid body control environments show our model is able to accurately
+      infer the constraints, and geometry-aware dynamics modeling leads to more accurate
+      and physically sensible future predictions.
+    authors: Kexin Yi, Toru Lin, and Phillip Isola
     camera_ready: false
     cmt_id: 22
     id: 22
@@ -165,7 +412,15 @@
     session: 1
     title: Geometry-Aware Modeling of Rigid Body Physics
     track: research
-  - authors: Martin Engelcke, Oiwi Parker Jones, and Ingmar Posner
+  - abstract: A range of methods with suitable inductive biases exist to learn interpretable
+      object-centric representations of images without supervision. However, these
+      are largely restricted to visually simple images; robust object discovery in
+      real-world sensory datasets remains elusive. To increase the understanding of
+      such inductive biases, we empirically investigate the role of ``reconstruction
+      bottlenecks'' for scene decomposition in GENESIS, a recent VAE-based model.
+      We show such bottlenecks determine reconstruction and segmentation quality and
+      critically influence model behaviour.
+    authors: Martin Engelcke, Oiwi Parker Jones, and Ingmar Posner
     camera_ready: false
     cmt_id: 5
     id: 5
@@ -173,7 +428,17 @@
     session: 1
     title: Reconstruction Bottlenecks in Object-Centric Generative Models
     track: research
-  - authors: Max B Paulus, Dami Choi, Danny Tarlow, Andreas Krause, and Chris Maddison
+  - abstract: The Gumbel-Max trick is the basis of many relaxed gradient estimators
+      for discrete distributions. These estimators are easy to implement and low variance,
+      but the goal of scaling them comprehensively to large combinatorial distributions
+      is still outstanding. We introduce stochastic softmax tricks, which generalize
+      the Gumbel-Softmax trick to combinatorial spaces. Our framework is a unified
+      perspective on existing relaxed estimators and contains novel relaxations. We
+      design structured relaxations for subset selection, spanning trees and arborescences.
+      We find that stochastic softmax tricks can be used to train latent variable
+      models that perform better and discover more latent structure than less structured
+      baselines.
+    authors: Max B Paulus, Dami Choi, Danny Tarlow, Andreas Krause, and Chris Maddison
     camera_ready: false
     cmt_id: 23
     id: 23
@@ -181,7 +446,21 @@
     session: 1
     title: Gradient Estimation with Stochastic Softmax Tricks
     track: research
-  - authors: Or Litany, Ari Morcos, Srinath Sridhar, Leonidas Guibas, and Judy Hoffman
+  - abstract: 'We seek to learn a representation on a large annotated data source
+      that generalizes to a target domain using limited new supervision. Many prior
+      approaches to this problem have focused on learning ``disentangled'''' representations
+      so that as individual factors vary in a new domain, only a portion of the representation
+      need be updated. In this work, we seek the generalization power of disentangled
+      representations, but relax the requirement of explicit latent disentanglement
+      and instead encourage linearity of individual factors of variation by requiring
+      them to be manipulable by learned linear transformations. We dub these transformations
+      latent canonicalizers, as they aim to modify the value of a factor to a pre-determined
+      (but arbitrary) canonical value (e.g., recoloring the image foreground to black).
+      Assuming a source domain with access to meta-labels specifying the factors of
+      variation within an image, we demonstrate experimentally that our method helps
+      reduce the number of observations needed to generalize to a similar target domain
+      when compared to a number of supervised baselines. '
+    authors: Or Litany, Ari Morcos, Srinath Sridhar, Leonidas Guibas, and Judy Hoffman
     camera_ready: false
     cmt_id: 1
     id: 1
@@ -189,7 +468,16 @@
     session: 1
     title: Representation Learning Through Latent Canonicalizations
     track: research
-  - authors: Qian Huang, Horace He, Abhay Singh, Yan Zhang, Ser-Nam Lim, and Austin
+  - abstract: Recently, there has been a growing interest in incorporating relational
+      reasoning into neural networks. However, existing approaches typically extract
+      objects from inputs through an arbitrary partitioning of the latent space. We
+      demonstrate that these methods do not respect set invariance and thus have fundamental
+      representational limitations. We propose a novel and general network module
+      that resolves this limitation and demonstrate how it naturally induces object
+      decomposition without explicit supervision. As part of this, we insert our module
+      into existing relational reasoning models and see significant performance gains
+      by respecting set invariance.
+    authors: Qian Huang, Horace He, Abhay Singh, Yan Zhang, Ser-Nam Lim, and Austin
       R Benson
     camera_ready: false
     cmt_id: 12
@@ -198,7 +486,15 @@
     session: 1
     title: Better Set Representations For Relational Reasoning
     track: research
-  - authors: "Titas Anciukevi\u010Dius, Christoph H Lampert, and Paul Henderson"
+  - abstract: We present a generative model of images, that incorporates a structured
+      latent representation separating objects from each other and from the background.
+      It explicitly models the depth ordering of objects, as well as their 2D positions,
+      with a novel and efficient approach to placement that avoids computationally-expensive
+      spatial transformers. The model can be trained from images alone, without the
+      need for object masks or depth supervision. It learns to generate coherent scenes,
+      and to decompose novel images into their constituent objects, predicting their
+      depth ordering, locations, and segmentation of occluded parts.
+    authors: "Titas Anciukevi\u010Dius, Christoph H Lampert, and Paul Henderson"
     camera_ready: false
     cmt_id: 11
     id: 11
@@ -206,7 +502,17 @@
     session: 1
     title: Structured Generative Modeling of Images with Object Depths and Locations
     track: research
-  - authors: Vikash Sehwag, Rajvardhan Oak, Mung Chiang, and Prateek Mittal
+  - abstract: 'With increasing expressive power, deep neural networks have significantly
+      improved the state-of-the-art on image classification datasets, such as ImageNet.
+      However, with this progress, the improvement in the quality of learned representations
+      is still unclear. In particular, we ask whether the modern deep neural networks
+      start exploiting correlations with background features to achieve higher accuracy
+      on the test images. We answer this question in two distinct frameworks: 1) performance
+      solely with background features 2) performance when abstain or switching image
+      background. Our experimental results for thirty different networks shows that
+      current DNNs do have a tendency, and it increases with expressive power, to
+      exploit background features to solve the task at hand.'
+    authors: Vikash Sehwag, Rajvardhan Oak, Mung Chiang, and Prateek Mittal
     camera_ready: false
     cmt_id: 26
     id: 26
@@ -215,7 +521,23 @@
     title: Time for a Background Check! Uncovering the Influence of Background Features
       on Deep Neural Networks
     track: research
-  - authors: Wilka Carvalho, Anthony Liang, Kimin Lee, Sungryull Sohn, Honglak Lee,
+  - abstract: 'Sequential decision-making tasks that require relating and using multiple
+      novel objects pose significant sample-efficiency challenges for agents learning
+      from sparse task rewards. In this work, we begin to address these challenges
+      by leveraging an agent''s object-interactions to define an auxilliary task that
+      enables sample-efficient reinforcement learning (RL) of tasks centered around
+      object-interactions. To accomplish this, we formulate ROMA: a relational reinforcement
+      learning agent that learns an object-centric forward model during task learning.
+      We find that this enables it to learn object-interaction tasks much faster than
+      other relational RL agents with alternative auxiliary tasks for driving the
+      learning of good representations. In order to evaluate the performance of our
+      agent, we introduce a set of object-interaction tasks in the AI2Thor virtual
+      home environment that require relating and interacting with multiple objects.
+      By comparing against an agent equipped with ground-truth object-information,
+      we find that learning an object-centric forward model best closes the performance
+      gap, achieving >=80% of its sample-efficiency on 7 out of 8 tasks, with the
+      next best method doing so on 2 out of 8 tasks.'
+    authors: Wilka Carvalho, Anthony Liang, Kimin Lee, Sungryull Sohn, Honglak Lee,
       Richard L Lewis, and Satinder Singh
     camera_ready: false
     cmt_id: 10
@@ -225,7 +547,14 @@
     title: 'ROMA: A Relational Object Modeling Agent for Sample-Efficient Reinforcement
       Learning'
     track: research
-  - authors: Zhixuan Lin, Yi-Fu Wu, Skand Skand, Bofeng Fu, Jindong Jiang, and Sungjin
+  - abstract: We introduce Generative Structured World Models (G-SWM), a novel object-centric
+      generative model for videos. The G-SWM not only unifies the key properties of
+      previous models in a principled framework but also achieves two crucial new
+      abilities, multimodal uncertainty, and situated behavior. By investigating the
+      generation ability in comparison to the previous models, we demonstrate that
+      G-SWM achieves the best or comparable performance for all experiment settings
+      including a few complex settings that have not been tested before.
+    authors: Zhixuan Lin, Yi-Fu Wu, Skand Skand, Bofeng Fu, Jindong Jiang, and Sungjin
       Ahn
     camera_ready: false
     cmt_id: 3
