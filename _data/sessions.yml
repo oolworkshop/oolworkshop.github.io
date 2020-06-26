@@ -82,7 +82,7 @@
       \ and in the accuracy of their predicted sizes. We test our model on MNIST-as-point-clouds\
       \ (SET-MNIST) for point-cloud generation and on CLEVR for object detection."
     authors: Adam R Kosiorek, Hyunjik Kim, and Danilo Jimenez Rezende
-    camera_ready: false
+    camera_ready: true
     cmt_id: 31
     id: 31
     kind: spotlight
