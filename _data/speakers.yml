@@ -13,3 +13,57 @@
   id: 34
   kind: oral
   title: What are Objects
+- abstract: To enable explicit representation of objects in neural architectures,
+    a core challenge lies in defining a mapping from input features (e.g., an image
+    encoded by a CNN) to a set of abstract object representations. In this talk, I
+    will discuss how attention mechanisms can be used in an iterative, competitive
+    fashion to (a) efficiently group visual features into object slots and (b) segment
+    temporal representations. I will further highlight how graph neural networks can
+    be utilized to learn about interactions between objects and how object-centric
+    models can be trained in a self-supervised fashion using contrastive losses.
+  authors: Thomas Kipf
+  id: 35
+  kind: oral
+  title: Attentive Grouping and Graph Neural Networks for Object-Centric Learning
+- abstract: TBD
+  authors: Fabien Baradel
+  id: 36
+  kind: oral
+  title: Invited Talk 3
+- abstract: TBD
+  authors: Jody Culham
+  id: 37
+  kind: oral
+  title: Invited Talk 4
+- abstract: TBD
+  authors: Moira Dillon
+  id: 38
+  kind: oral
+  title: Invited Talk 5
+- abstract: TBD
+  authors: Linda Smith
+  id: 39
+  kind: oral
+  title: Invited Talk 6
+- abstract: 'How we represent signals has major implications for the algorithms we
+    build to analyze them. Today, most signals are represented discretely: Images
+    as grids of pixels, shapes as point clouds, audio as grids of amplitudes, etc.
+    If images weren''t pixel grids - would we be using convolutional neural networks
+    today? What makes a good or bad representation? Can we do better? I will talk
+    about leveraging emerging implicit neural representations for complex & large
+    signals, such as room-scale geometry, images, audio, video, and physical signals
+    defined via partial differential equations. By embedding an implicit scene representation
+    in a neural rendering framework and learning a prior over these representations,
+    I will show how we can enable 3D reconstruction from only a single posed 2D image.
+    Finally, I will show how gradient-based meta-learning can enable fast inference
+    of implicit representations, and how the features we learn in the process are
+    already useful to the downstream task of semantic segmentation.'
+  authors: Vincent Sitzmann
+  id: 40
+  kind: oral
+  title: Implicit Neural Scene Representations
+- abstract: TBD
+  authors: Igor Mordatch
+  id: 41
+  kind: oral
+  title: Invited Talk 7
