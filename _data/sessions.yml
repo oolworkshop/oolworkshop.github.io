@@ -18,7 +18,7 @@
       stream, but also of extracting 3D information about objects (e.g. depth) and
       of tracking them through 3D space.
     authors: Eric Crawford and Joelle Pineau
-    camera_ready: false
+    camera_ready: true
     cmt_id: 19
     id: 19
     kind: oral
@@ -41,7 +41,7 @@
       in locally factored tasks, including the batch-constrained and goal-conditioned
       settings.
     authors: Silviu Pitis, Elliot Creager, and Animesh Garg
-    camera_ready: false
+    camera_ready: true
     cmt_id: 17
     id: 17
     kind: oral
@@ -63,7 +63,7 @@
       in a targeted and deliberate way.
     authors: Yizhe Wu, Sudhanshu Kasewa, Oliver M Groth, Sasha Salter, Li Sun, Oiwi
       Parker Jones, and Ingmar Posner
-    camera_ready: false
+    camera_ready: true
     cmt_id: 7
     id: 7
     kind: oral
@@ -98,7 +98,7 @@
       corresponding to the most salient object parts and is more robust to certain
       visual distractors.
     authors: "Anand Gopalakrishnan, Sjoerd van Steenkiste, and J\xFCrgen Schmidhuber"
-    camera_ready: false
+    camera_ready: true
     cmt_id: 9
     id: 9
     kind: spotlight
@@ -118,7 +118,7 @@
       we demonstrate that RICH is able to learn the latent compositional hierarchy,
       generate imaginary scenes, and improve data efficiency in downstream tasks.
     authors: Fei Deng, Zhuo Zhi, and Sungjin Ahn
-    camera_ready: false
+    camera_ready: true
     cmt_id: 30
     id: 30
     kind: spotlight
@@ -137,7 +137,7 @@
       of regular polygons and on MNIST point clouds, GAST outperforms graph-convolution-based
       GANs in sample fidelity, while showing good generalization to novel set sizes.
     authors: Karl Stelzner, Kristian Kersting, and Adam R Kosiorek
-    camera_ready: false
+    camera_ready: true
     cmt_id: 32
     id: 32
     kind: spotlight
@@ -154,7 +154,7 @@
       demonstrate the applicability of our unified objective, and the use of test
       time optimisation to solve problems inherent to amortised inference.'
     authors: Lewis SG Smith, Lisa Schut, Yarin Gal, and Mark van der Wilk
-    camera_ready: false
+    camera_ready: true
     cmt_id: 6
     id: 6
     kind: spotlight
@@ -170,7 +170,7 @@
       solve new tasks. The resulting learned representations enable the use of a task-level
       planner, resulting in an agent capable of forming complex, long-term plans.
     authors: Steven D James, Benjamin Rosman, and George Konidaris
-    camera_ready: false
+    camera_ready: true
     cmt_id: 4
     id: 4
     kind: spotlight
@@ -194,7 +194,7 @@
       manipulation tasks in challenging, cluttered environments.
     authors: William Agnew, Christopher Xie, Aaron T Walsman, Octavian V Murad, Yubo
       Wang, Pedro Domingos, and Siddhartha Srinivasa
-    camera_ready: false
+    camera_ready: true
     cmt_id: 28
     id: 28
     kind: spotlight
@@ -215,7 +215,7 @@
       our study provides a novel benchmark for evaluating how well algorithmic models
       of physical reasoning and planning correspond to human behavior.
     authors: William P McCarthy and Judy Fan
-    camera_ready: false
+    camera_ready: true
     cmt_id: 14
     id: 14
     kind: spotlight
@@ -232,7 +232,7 @@
       to discover objects, parts, and their relations. We demonstrate how it improves
       over a strong baseline at modeling synthetic and real-world physical dynamics.
     authors: "Aleksandar Stanic, Sjoerd van Steenkiste, and J\xFCrgen Schmidhuber"
-    camera_ready: false
+    camera_ready: true
     cmt_id: 24
     id: 24
     kind: poster
@@ -252,7 +252,7 @@
       \ unsupervised representation learning of object-centric representations in\
       \ environments with dynamics."
     authors: Andrii Zadaianchuk and Georg Martius
-    camera_ready: false
+    camera_ready: true
     cmt_id: 16
     id: 16
     kind: poster
@@ -277,7 +277,7 @@
       generative modeling of sketches and conditional generation of likely constraints
       given unconstrained geometry.'
     authors: Ari Seff, Yaniv Ovadia, Wenda Zhou, and Ryan P Adams
-    camera_ready: false
+    camera_ready: true
     cmt_id: 33
     id: 33
     kind: poster
@@ -302,7 +302,7 @@
       that can potentially lead to further improvements.
     authors: "Boris Knyazev, Harm De Vries, C\u0103t\u0103lina Cangea, Graham Taylor,\
       \ Aaron Courville, and Eugene Belilovsky"
-    camera_ready: false
+    camera_ready: true
     cmt_id: 21
     id: 21
     kind: poster
@@ -322,7 +322,7 @@
       we introduce a new quantitative evaluation metric to measure how ``diverse''
       a set of slot vectors are, and use it to evaluate our model on 20 Atari games.
     authors: Evan Racah and Sarath Chandar
-    camera_ready: false
+    camera_ready: true
     cmt_id: 29
     id: 29
     kind: poster
@@ -340,7 +340,7 @@
       perfect performance across our evaluations, suggesting there is room for improvement
       in this problem. '
     authors: Guy Davidson and Brenden M Lake
-    camera_ready: false
+    camera_ready: true
     cmt_id: 20
     id: 20
     kind: poster
@@ -359,7 +359,7 @@
       how the resulting library of learned subroutines is jointly determined by the
       data distribution and the cost of learning additional subroutines. '
     authors: Haoliang Wang and Judy Fan
-    camera_ready: false
+    camera_ready: true
     cmt_id: 15
     id: 15
     kind: poster
@@ -379,7 +379,7 @@
       facilitates the testing of representation learning methods which are theoretically
       identifiable, thus providing a bridge between recent theory and practical applicability.
     authors: Jack Brady and Geoffrey Roeder
-    camera_ready: false
+    camera_ready: true
     cmt_id: 25
     id: 25
     kind: poster
@@ -405,7 +405,7 @@
       infer the constraints, and geometry-aware dynamics modeling leads to more accurate
       and physically sensible future predictions.
     authors: Kexin Yi, Toru Lin, and Phillip Isola
-    camera_ready: false
+    camera_ready: true
     cmt_id: 22
     id: 22
     kind: poster
@@ -421,7 +421,7 @@
       We show such bottlenecks determine reconstruction and segmentation quality and
       critically influence model behaviour.
     authors: Martin Engelcke, Oiwi Parker Jones, and Ingmar Posner
-    camera_ready: false
+    camera_ready: true
     cmt_id: 5
     id: 5
     kind: poster
@@ -439,7 +439,7 @@
       models that perform better and discover more latent structure than less structured
       baselines.
     authors: Max B Paulus, Dami Choi, Danny Tarlow, Andreas Krause, and Chris Maddison
-    camera_ready: false
+    camera_ready: true
     cmt_id: 23
     id: 23
     kind: poster
@@ -461,7 +461,7 @@
       reduce the number of observations needed to generalize to a similar target domain
       when compared to a number of supervised baselines. '
     authors: Or Litany, Ari Morcos, Srinath Sridhar, Leonidas Guibas, and Judy Hoffman
-    camera_ready: false
+    camera_ready: true
     cmt_id: 1
     id: 1
     kind: poster
@@ -479,7 +479,7 @@
       by respecting set invariance.
     authors: Qian Huang, Horace He, Abhay Singh, Yan Zhang, Ser-Nam Lim, and Austin
       R Benson
-    camera_ready: false
+    camera_ready: true
     cmt_id: 12
     id: 12
     kind: poster
@@ -495,7 +495,7 @@
       and to decompose novel images into their constituent objects, predicting their
       depth ordering, locations, and segmentation of occluded parts.
     authors: "Titas Anciukevi\u010Dius, Christoph H Lampert, and Paul Henderson"
-    camera_ready: false
+    camera_ready: true
     cmt_id: 11
     id: 11
     kind: poster
@@ -513,7 +513,7 @@
       current DNNs do have a tendency, and it increases with expressive power, to
       exploit background features to solve the task at hand.'
     authors: Vikash Sehwag, Rajvardhan Oak, Mung Chiang, and Prateek Mittal
-    camera_ready: false
+    camera_ready: true
     cmt_id: 26
     id: 26
     kind: poster
@@ -539,7 +539,7 @@
       next best method doing so on 2 out of 8 tasks.'
     authors: Wilka Carvalho, Anthony Liang, Kimin Lee, Sungryull Sohn, Honglak Lee,
       Richard L Lewis, and Satinder Singh
-    camera_ready: false
+    camera_ready: true
     cmt_id: 10
     id: 10
     kind: poster
@@ -556,7 +556,7 @@
       including a few complex settings that have not been tested before.
     authors: Zhixuan Lin, Yi-Fu Wu, Skand Skand, Bofeng Fu, Jindong Jiang, and Sungjin
       Ahn
-    camera_ready: false
+    camera_ready: true
     cmt_id: 3
     id: 3
     kind: poster

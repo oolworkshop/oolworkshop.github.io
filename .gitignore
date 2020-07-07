@@ -2,3 +2,4 @@ _site
 .idea
 scripts/data
 scripts/__pycache__
+.DS_Store
