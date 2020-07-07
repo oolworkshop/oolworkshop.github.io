@@ -62,6 +62,13 @@ session_2: false
 <!--		<span><a href="/slides/BAICS_{{ page.id }}.pdf" target="_blank">Slides</a></span>-->
 <!--		</li>-->
 <!--		{% endif %}-->
+
+        {% if page.kind == "poster" %}
+        <li></br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ var url = page.youtube_id.split('/'); url[url.length - 1] }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <span><a href="{{ page.video_file_url }}" target="_blank">Downloable Video File</a></span>
+        </li>
+        {% endif %}
 		<li></br>
 		<span> <p align=justify>{{ page.abstract }} </p> </span>
 		</li>

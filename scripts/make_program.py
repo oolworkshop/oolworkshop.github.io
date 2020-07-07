@@ -23,6 +23,9 @@ title: "{title}"
 abstract: "{abstract}"
 track: {track}
 live: {live}
+video_file_url: {video_file_url}
+youtube_url: {youtube_url}
+slideslive_url: {slideslive_url}
 ---
 """.strip()
 
