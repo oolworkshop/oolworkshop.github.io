@@ -15,7 +15,7 @@
   slideslive_url: none
   title: What are Objects
   video_file_url: none
-  youtube_id: none
+  youtube_url: none
 - abstract: To enable explicit representation of objects in neural architectures,
     a core challenge lies in defining a mapping from input features (e.g., an image
     encoded by a CNN) to a set of abstract object representations. In this talk, I
@@ -30,7 +30,7 @@
   slideslive_url: none
   title: Attentive Grouping and Graph Neural Networks for Object-Centric Learning
   video_file_url: none
-  youtube_id: none
+  youtube_url: none
 - abstract: TBD
   authors: Fabien Baradel
   id: 36
@@ -38,7 +38,7 @@
   slideslive_url: none
   title: Invited Talk 3
   video_file_url: none
-  youtube_id: none
+  youtube_url: none
 - abstract: Two-dimensional images are commonly used to study and model perceptual
     and cognitive processes because of the convenience and ease of experimental control
     they provide. However, real objects differ from pictures in many ways, including
@@ -56,7 +56,7 @@
   title: '"The treachery of images": How the realness of objects affects brain activation
     and behavior'
   video_file_url: none
-  youtube_id: none
+  youtube_url: none
 - abstract: TBD
   authors: Moira Dillon
   id: 38
@@ -64,7 +64,7 @@
   slideslive_url: none
   title: Invited Talk 5
   video_file_url: none
-  youtube_id: none
+  youtube_url: none
 - abstract: TBD
   authors: Linda Smith
   id: 39
@@ -72,7 +72,7 @@
   slideslive_url: none
   title: Invited Talk 6
   video_file_url: none
-  youtube_id: none
+  youtube_url: none
 - abstract: 'How we represent signals has major implications for the algorithms we
     build to analyze them. Today, most signals are represented discretely: Images
     as grids of pixels, shapes as point clouds, audio as grids of amplitudes, etc.
@@ -92,7 +92,7 @@
   slideslive_url: none
   title: Implicit Neural Scene Representations
   video_file_url: none
-  youtube_id: none
+  youtube_url: none
 - abstract: TBD
   authors: Igor Mordatch
   id: 41
@@ -100,4 +100,4 @@
   slideslive_url: none
   title: Invited Talk 7
   video_file_url: none
-  youtube_id: none
+  youtube_url: none
