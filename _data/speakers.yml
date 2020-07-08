@@ -25,11 +25,25 @@
   id: 35
   kind: oral
   title: Attentive Grouping and Graph Neural Networks for Object-Centric Learning
-- abstract: TBD
+- abstract: Understanding causes and effects in mechanical systems is an essential
+    component of reasoning in the physical world. This work poses a new problem of
+    counterfactual learning of object mechanics from visual input. We develop the
+    CoPhy benchmark to assess the capacity of the state-of-the-art models for causal
+    physical reasoning in a synthetic 3D environment and propose a model for learning
+    the physical dynamics in a counterfactual setting. Having observed a mechanical
+    experiment that involves, for example, a falling tower of blocks, a set of bouncing
+    balls or colliding objects, we learn to predict how its outcome is affected by
+    an arbitrary intervention on its initial conditions, such as displacing one of
+    the objects in the scene. The alternative future is predicted given the altered
+    past and a latent representation of the confounders learned by the model in an
+    end-to-end fashion with no supervision. We compare against feedforward video prediction
+    baselines and show how observing alternative experiences allows the network to
+    capture latent physical properties of the environment, which results in significantly
+    more accurate predictions at the level of super human performance.
   authors: Fabien Baradel
   id: 36
   kind: oral
-  title: Invited Talk 3
+  title: Towards counterfactual learning
 - abstract: Two-dimensional images are commonly used to study and model perceptual
     and cognitive processes because of the convenience and ease of experimental control
     they provide. However, real objects differ from pictures in many ways, including
@@ -45,11 +59,18 @@
   kind: oral
   title: '"The treachery of images": How the realness of objects affects brain activation
     and behavior'
-- abstract: TBD
+- abstract: "Objects elicit attention in many everyday contexts, even from infancy.\
+    \ Objects also serve as the referents for humans\u2019 earliest symbolic learning:\
+    \ language. In this talk, I\u2019ll present my lab\u2019s recent work with young\
+    \ children suggesting that objects are also prioritized in another early emerging\
+    \ and uniquely human symbolic expression: drawing.  I\u2019ll conclude my talk\
+    \ by suggesting that researchers interested in artificial intelligence may look\
+    \ for inspiration in human intelligence, especially when it comes to the way that\
+    \ humans attend to and represent objects."
   authors: Moira Dillon
   id: 38
   kind: oral
-  title: Invited Talk 5
+  title: Object-Oriented Drawings
 - abstract: TBD
   authors: Linda Smith
   id: 39
