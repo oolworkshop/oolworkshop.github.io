@@ -23,11 +23,8 @@
     id: 19
     kind: oral
     session: 1
-    slideslive_url: none
     title: Learning 3D Object-Oriented World Models from Unlabeled Videos
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: Many dynamic processes, including common scenarios in robotic control
       and reinforcement learning (RL), involve a set of interacting subprocesses.
       Though the subprocesses are not independent, their interactions are often sparse,
@@ -49,11 +46,8 @@
     id: 17
     kind: oral
     session: 1
-    slideslive_url: none
     title: Counterfactual Data Augmentation using Locally Factored Dynamics
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: Given visual observations of a reaching task together with a stick-like
       tool, we propose a novel approach that learns to exploit task-relevant object
       affordances by combining generative modelling with a task-based performance
@@ -74,11 +68,8 @@
     id: 7
     kind: oral
     session: 1
-    slideslive_url: none
     title: Learning Affordances in Object-Centric Generative Models
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: "A  set  is  an  unordered  collection  of  unique elements\u2014and\
       \ yet many machine learning models that generate sets impose an implicit or\
       \ explicit ordering. Since model performance can depend on the choice of ordering,\
@@ -96,11 +87,8 @@
     id: 31
     kind: spotlight
     session: 1
-    slideslive_url: none
     title: Conditional Set Generation with Transformers
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: We propose a novel approach to representation learning based on object
       keypoints. It leverages the predictability of local image regions from spatial
       neighborhoods to identify salient regions that correspond to object parts, which
@@ -115,11 +103,8 @@
     id: 9
     kind: spotlight
     session: 1
-    slideslive_url: none
     title: Unsupervised Object Keypoint Learning using Local Spatial Predictability
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: Compositional structures between parts and objects are inherent in natural
       scenes. Recent work on representation learning has succeeded in modeling scenes
       as composition of objects, but further decomposition of objects into parts and
@@ -138,12 +123,9 @@
     id: 30
     kind: spotlight
     session: 1
-    slideslive_url: none
     title: Hierarchical Decomposition and Generation of Scenes with Compositional
       Objects
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: Groups of entities are naturally represented as sets, but generative
       models usually treat them as independent from each other or as sequences. This
       either over-simplifies the problem, or imposes an order to the otherwise unordered
@@ -160,11 +142,8 @@
     id: 32
     kind: spotlight
     session: 1
-    slideslive_url: none
     title: Generative Adversarial Set Transformers
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: '`Capsule'' models try to explicitly represent the poses of objects,
       enforcing a linear relationship between an objects pose and those of its constituent
       parts. This modelling assumption should lead to robustness to viewpoint changes
@@ -180,11 +159,8 @@
     id: 6
     kind: spotlight
     session: 1
-    slideslive_url: none
     title: 'Capsule Networks: A Generative Probabilistic Perspective'
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: We propose a method for autonomously learning an object-centric representation
       of a high-dimensional environment that is suitable for planning. Such abstractions
       can be immediately transferred between tasks that share the same types of objects,
@@ -199,11 +175,8 @@
     id: 4
     kind: spotlight
     session: 1
-    slideslive_url: none
     title: Learning Object-Centric Representations for High-Level Planning in Minecraft
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: Learning-based 3D object reconstruction enables single- or few-shot
       estimation of 3D object models. For robotics this holds the potential to allow
       model-based methods to rapidly adapt to novel objects and scenes. Existing 3D
@@ -226,11 +199,8 @@
     id: 28
     kind: spotlight
     session: 1
-    slideslive_url: none
     title: Amodal 3D Reconstruction for Robotic Manipulation via Stability and Connectivity
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: The ability to build a wide array of physical structures, from sand
       castles to skyscrapers, is a hallmark of human intelligence. What computational
       mechanisms enable humans to create such complex and varied structures? Here
@@ -250,11 +220,8 @@
     id: 14
     kind: spotlight
     session: 1
-    slideslive_url: none
     title: Rapid policy updating in human physical construction
     track: research
-    video_file_url: none
-    youtube_url: none
   - abstract: Common-sense physical reasoning requires learning about the interactions
       of objects and their dynamics. The notion of an abstract object, however, encompasses
       a wide variety of physical objects that differ greatly in terms of the complex
@@ -270,11 +237,8 @@
     id: 24
     kind: poster
     session: 1
-    slideslive_url: none
     title: Hierarchical Relational Inference
     track: research
-    video_file_url: http://services.google.com/fh/files/events/24.webm.zip
-    youtube_url: https://youtu.be/d4ylI253duc
   - abstract: "In recent years, several methods for learning disentangled representations\
       \ (with respect to the underlying factors of variation) were proposed. One of\
       \ them, Independently Controllable Factors (ICF), is learning a representation\
@@ -293,11 +257,8 @@
     id: 16
     kind: poster
     session: 1
-    slideslive_url: none
     title: Unsupervised Learning of Independently Controllable Dynamic Components
     track: research
-    video_file_url: http://services.google.com/fh/files/events/16.mp4.zip
-    youtube_url: https://youtu.be/WEnoOlOQ6OY
   - abstract: 'Parametric computer-aided design (CAD) is the dominant paradigm in
       mechanical engineering for physical design. Distinguished by relational geometry,
       parametric CAD models begin as two-dimensional sketches consisting of geometric
@@ -321,12 +282,9 @@
     id: 33
     kind: poster
     session: 1
-    slideslive_url: none
     title: 'SketchGraphs: A Large-Scale Dataset for Modeling Relational Geometry in
       Computer-Aided Design'
     track: research
-    video_file_url: http://services.google.com/fh/files/events/33.m4v.zip
-    youtube_url: https://youtu.be/tWffR-HijWk
   - abstract: Inferring objects and their relationships from an image is useful in
       many applications at the intersection of vision and language. Due to a long
       tail data distribution, the task is challenging, with the inevitable appearance
@@ -349,11 +307,8 @@
     id: 21
     kind: poster
     session: 1
-    slideslive_url: none
     title: Generative Graph Perturbations for Scene Graph Prediction
     track: research
-    video_file_url: http://services.google.com/fh/files/events/21.mov.zip
-    youtube_url: https://youtu.be/ZKGgCQQ9ZtQ
   - abstract: Unsupervised extraction of objects from low-level visual data is an
       important goal for further progress in machine learning. Existing approaches
       for representing objects without labels use structured generative models with
@@ -372,11 +327,8 @@
     id: 29
     kind: poster
     session: 1
-    slideslive_url: none
     title: 'Slot Contrastive Networks: A Contrastive Approach for Representing Objects'
     track: research
-    video_file_url: http://services.google.com/fh/files/events/29.mov.zip
-    youtube_url: https://youtu.be/EoZCxY3EL9o
   - abstract: 'We offer a systematic comparison of the ability of neural network architectures
       to learn relations from collections of objects. Relational inference is a crucial
       component of human reasoning from early development, and while the deep learning
@@ -393,11 +345,8 @@
     id: 20
     kind: poster
     session: 1
-    slideslive_url: none
     title: Systematically Comparing Neural Network Architectures in Relation Leaning
     track: research
-    video_file_url: http://services.google.com/fh/files/events/20.mp4.zip
-    youtube_url: https://youtu.be/t0Bg-RZR4LY
   - abstract: 'The ability to represent semantic structure in the environment ---
       objects, parts, and relations --- is a core aspect of human visual perception
       and cognition. As a testament to this ability, humans are capable of expressing
@@ -415,11 +364,8 @@
     id: 15
     kind: poster
     session: 1
-    slideslive_url: none
     title: Library learning for structured object concepts
     track: research
-    video_file_url: http://services.google.com/fh/files/events/15.mp4.zip
-    youtube_url: https://youtu.be/jAUFAsPxstU
   - abstract: One of the ultimate goals of unsupervised representation learning is
       identifiability, or the ability to recover the true generating factors for a
       set of observations. For object-oriented representations, learning an identifiable
@@ -438,11 +384,8 @@
     id: 25
     kind: poster
     session: 1
-    slideslive_url: none
     title: 'iSprites: A Dataset for Identifiable Multi-Object Representation Learning'
     track: research
-    video_file_url: http://services.google.com/fh/files/events/25.mp4.zip
-    youtube_url: https://youtu.be/y_0GJ-N2WwQ
   - abstract: Rigid body systems are among the most important subjects of study in
       physics and are widely applied in both simulated and real-world applications.
       As suggested by theory of classical mechanics, the motion of a rigid body system
@@ -467,11 +410,8 @@
     id: 22
     kind: poster
     session: 1
-    slideslive_url: none
     title: Geometry-Aware Modeling of Rigid Body Physics
     track: research
-    video_file_url: http://services.google.com/fh/files/events/22.mp4.zip
-    youtube_url: https://youtu.be/s6o7Yy7AWxM
   - abstract: A range of methods with suitable inductive biases exist to learn interpretable
       object-centric representations of images without supervision. However, these
       are largely restricted to visually simple images; robust object discovery in
@@ -486,11 +426,8 @@
     id: 5
     kind: poster
     session: 1
-    slideslive_url: none
     title: Reconstruction Bottlenecks in Object-Centric Generative Models
     track: research
-    video_file_url: http://services.google.com/fh/files/events/5.m4v.zip
-    youtube_url: https://youtu.be/osqhwIjNbxI
   - abstract: 'We seek to learn a representation on a large annotated data source
       that generalizes to a target domain using limited new supervision. Many prior
       approaches to this problem have focused on learning ``disentangled'''' representations
@@ -511,11 +448,8 @@
     id: 1
     kind: poster
     session: 1
-    slideslive_url: none
     title: Representation Learning Through Latent Canonicalizations
     track: research
-    video_file_url: http://services.google.com/fh/files/events/1.mp4.zip
-    youtube_url: https://youtu.be/l1Dh4vHuYQ4
   - abstract: Recently, there has been a growing interest in incorporating relational
       reasoning into neural networks. However, existing approaches typically extract
       objects from inputs through an arbitrary partitioning of the latent space. We
@@ -532,11 +466,8 @@
     id: 12
     kind: poster
     session: 1
-    slideslive_url: none
     title: Better Set Representations For Relational Reasoning
     track: research
-    video_file_url: http://services.google.com/fh/files/events/12.mp4.zip
-    youtube_url: https://youtu.be/Yhe5mZ-i6-Y
   - abstract: We present a generative model of images, that incorporates a structured
       latent representation separating objects from each other and from the background.
       It explicitly models the depth ordering of objects, as well as their 2D positions,
@@ -551,11 +482,8 @@
     id: 11
     kind: poster
     session: 1
-    slideslive_url: none
     title: Structured Generative Modeling of Images with Object Depths and Locations
     track: research
-    video_file_url: http://services.google.com/fh/files/events/11.mp4.zip
-    youtube_url: https://youtu.be/AdAgL3bJk2w
   - abstract: 'With increasing expressive power, deep neural networks have significantly
       improved the state-of-the-art on image classification datasets, such as ImageNet.
       However, with this progress, the improvement in the quality of learned representations
@@ -572,12 +500,9 @@
     id: 26
     kind: poster
     session: 1
-    slideslive_url: none
     title: Time for a Background Check! Uncovering the Influence of Background Features
       on Deep Neural Networks
     track: research
-    video_file_url: http://services.google.com/fh/files/events/26.mov.zip
-    youtube_url: https://youtu.be/l0taOL_MY6o
   - abstract: 'Sequential decision-making tasks that require relating and using multiple
       novel objects pose significant sample-efficiency challenges for agents learning
       from sparse task rewards. In this work, we begin to address these challenges
@@ -601,12 +526,9 @@
     id: 10
     kind: poster
     session: 1
-    slideslive_url: none
     title: 'ROMA: A Relational Object Modeling Agent for Sample-Efficient Reinforcement
       Learning'
     track: research
-    video_file_url: http://services.google.com/fh/files/events/10.mp4.zip
-    youtube_url: https://youtu.be/wed082iOexo
   - abstract: We introduce Generative Structured World Models (G-SWM), a novel object-centric
       generative model for videos. The G-SWM not only unifies the key properties of
       previous models in a principled framework but also achieves two crucial new
@@ -621,9 +543,6 @@
     id: 3
     kind: poster
     session: 1
-    slideslive_url: none
     title: Generating Stochastic Object Dynamics in Scenes
     track: research
-    video_file_url: http://services.google.com/fh/files/events/3.mp4.zip
-    youtube_url: https://youtu.be/AGkMPod_P1k
   title: Session 1 (11-11:30 am ?)

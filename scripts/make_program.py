@@ -54,7 +54,12 @@ def make_jekyll_data():
             session_data.query("kind == 'spotlight'"),
             session_data.query("kind == 'poster'"),
         ])
-        session_data = session_data.drop(columns=["session_title"])
+        session_data = session_data.drop(columns=[
+            "session_title",
+            "video_file_url",
+            "youtube_url",
+            "slideslive_url",
+        ])
         sessions.append({
             "id": session,
             "title": session_title,
@@ -72,6 +77,9 @@ def make_jekyll_data():
         "session",
         "session_title",
         "track",
+        "video_file_url",
+        "youtube_url",
+        "slideslive_url",
     ])
     speakers = speakers.to_dict(orient="records")
     with open("_data/speakers.yml", "w") as fh:
