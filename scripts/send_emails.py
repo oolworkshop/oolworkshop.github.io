@@ -1,3 +1,12 @@
+"""Script for automatically sending emails.
+
+You need to turn on "Less secure app access" in your gmail account
+settings: https://myaccount.google.com/u/4/lesssecureapps?pli=1
+
+See also: https://realpython.com/python-send-email/
+
+"""
+
 import smtplib
 import ssl
 from email.mime.text import MIMEText
@@ -22,7 +31,7 @@ def get_zoom_users():
         "email": "host_email",
         "password": "host_password"
     })
-    users = users[["host_id", "host_email", "host_password", "host_key"]]
+    users = users[["host_id", "host_email", "host_password"]]
     return users
 
 
@@ -45,7 +54,7 @@ def get_zoom_meetings(ids, prefix):
 
 def get_presenter_email_body(data):
     message = MIMEMultipart("alternative")
-    message["Subject"] = "BAICS Presentation Instructions"
+    message["Subject"] = "OOL Presentation Instructions"
     message["From"] = SENDER_EMAIL
     message["To"] = data["presenter_email"]
 
@@ -60,7 +69,7 @@ def get_presenter_email_body(data):
 def send_presenter_emails():
     # Load meeting data.
     papers = load_presentation_data()
-    meetings = get_zoom_meetings(papers["unique_id"].unique(), prefix="BAICS")
+    meetings = get_zoom_meetings(papers["unique_id"].unique(), prefix="OOL")
     users = get_zoom_users()
     meetings = pd.merge(meetings, users, on="host_id")
     meetings = pd.merge(meetings, papers, on="unique_id")
@@ -75,42 +84,6 @@ def send_presenter_emails():
             server.sendmail(SENDER_EMAIL, meeting["presenter_email"], message)
 
 
-#### Meet-and-greet emails ####
-
-def get_meet_and_greet_email_body(data):
-    message = MIMEMultipart("alternative")
-    message["Subject"] = "BAICS Meet-and-Greet Instructions"
-    message["From"] = SENDER_EMAIL
-    message["To"] = data["emails"]
-
-    with open("scripts/templates/meet_and_greet.html", "r") as fh:
-        body = fh.read()
-    body = body.format(**data)
-
-    message.attach(MIMEText(body, "html"))
-    return message
-
-
-def send_meet_and_greet_emails():
-    # Load meeting data.
-    data = load_meet_and_greet_data()
-    meetings = get_zoom_meetings(
-        data["unique_id"].unique(), prefix="meet_and_greet")
-    users = get_zoom_users()
-    meetings = pd.merge(meetings, users, on="host_id")
-    meetings = pd.merge(meetings, data, on="unique_id")
-    meetings = meetings.to_dict(orient="records")
-
-    context = ssl.create_default_context()
-    with smtplib.SMTP_SSL(SMTP_SERVER, PORT, context=context) as server:
-        server.login(SENDER_EMAIL, SENDER_PASSWORD)
-        for i, meeting in enumerate(meetings):
-            print("{}: {}".format(i, meeting["emails"]))
-            message = get_meet_and_greet_email_body(meeting)
-            server.send_message(message)
-
-
 if __name__ == "__main__":
-    #send_presenter_emails()
-    send_meet_and_greet_emails()
+    send_presenter_emails()
  

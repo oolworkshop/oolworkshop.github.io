@@ -13,7 +13,7 @@ Assumptions this script makes:
   integer going from 0 to you max user count.
 - Information about your posters is in a yaml file called
   `_data/sessions.yml`, with the same format as:
-  https://github.com/baicsworkshop/baicsworkshop.github.io/blob/master/_data/sessions.yml
+  https://github.com/oolworkshop/oolworkshop.github.io/blob/master/_data/sessions.yml
 
 
 Instructions:
@@ -38,7 +38,7 @@ Instructions:
     USER_EMAIL_TEMPLATE: a python format string for
       the host email accounts, e.g. "my.zoom.email+{}@gmail.com"
 - Put session data in `_data/sessions.yml`, see e.g.
-  https://github.com/baicsworkshop/baicsworkshop.github.io/blob/master/_data/sessions.yml
+  https://github.com/oolworkshop/oolworkshop.github.io/blob/master/_data/sessions.yml
 - Edit `create_poster_sessions` as needed to fit your
   particular workshop format.
 - Call `create_poster_sessions()`.
@@ -58,9 +58,8 @@ import random
 import hashlib
 from textwrap import dedent
 
-from secret import TOKEN, USER_EMAIL_TEMPLATE, PASSWORD, SALT
+from secret import TOKEN, USER_EMAIL_TEMPLATE, PASSWORD
 from utils import meeting_json_exists, save_meeting_json, read_meeting_json
-from utils import load_meet_and_greet_data
 
 
 def _get(endpoint, params=None):
@@ -152,7 +151,7 @@ def find_user(user_email):
 	for user in users:
 		if user["email"] == user_email:
 			return user
-	assert False
+	raise ValueError("no such user: {}".format(user_email))
 
 
 def create_or_update_meeting(
@@ -210,8 +209,8 @@ def create_or_update_meeting(
 def create_poster_sessions():
 	# These are in GMT.
 	session_times = {
-		1: "2020-04-26T14:00:00Z",
-		2: "2020-04-26T21:00:00Z",
+		1: "2020-07-17T15:30:00Z",
+		2: "2020-07-17T23:00:00Z",
 	}
 
 	# TODO: update this to use `load_presentation_data` rather
@@ -219,10 +218,11 @@ def create_poster_sessions():
 	with open("_data/sessions.yml", "r") as fh:
 		sessions = yaml.load(fh)
 
+	i = 1
 	for session in sessions:
-		for i, paper in enumerate(session["papers"]):
+		for paper in session["papers"]:
 			meeting = create_or_update_meeting(
-				unique_id="BAICS_{}".format(paper["id"]),
+				unique_id="OOL_{}".format(paper["id"]),
 				user_email=USER_EMAIL_TEMPLATE.format(i),
 				topic=paper["title"],
 				start_time=session_times[paper["session"]],
@@ -230,42 +230,8 @@ def create_poster_sessions():
 				duration=60,  # minutes
 				waiting_room=True)
 			time.sleep(1)  # to prevent ratelimiting
-
-
-def random_password(title, length=10):
-	# Convert the title into a seed.
-	m = hashlib.sha256()
-	m.update((title + SALT).encode())
-	seed = int(m.hexdigest(), base=16)
-
-	# Randomly sample characters for the password.
-	choices = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-	random.seed(seed)
-	return "".join(random.choices(choices, k=length))
-
-
-def create_meet_and_greets():
-	# These are in GMT.
-	session_times = {
-		1: "2020-04-26T13:00:00Z",
-		2: "2020-04-26T20:00:00Z",
-	}
-
-	data = load_meet_and_greet_data()
-	for session_id, df in data.groupby("session"):
-		for i, meeting in enumerate(df.to_dict(orient="records")):
-			title = "BAICS Meet-and-Greet: {}".format(meeting["names"])
-			create_or_update_meeting(
-				unique_id="meet_and_greet_{}".format(meeting["unique_id"]),
-				user_email=USER_EMAIL_TEMPLATE.format(i),
-				topic=title,
-				start_time=session_times[session_id],
-				password=random_password(title),
-				duration=30,  # minutes
-				waiting_room=False)
-			time.sleep(1)  # to prevent ratelimiting
+			i += 1
 
 
 if __name__ == "__main__":
-	#create_poster_sessions()
-	create_meet_and_greets()
+	create_poster_sessions()
