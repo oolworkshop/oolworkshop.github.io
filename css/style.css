@@ -218,6 +218,7 @@ table .time {
 
   #header {
     width: 900px;
+    padding: 0px;
   }
 
   .navbar .navbar-nav {
