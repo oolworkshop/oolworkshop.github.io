@@ -46,7 +46,7 @@ def make_jekyll_data():
 
     # Process sessions.
     sessions = []
-    for session in [1]:  # TODO(sjoerd): switch back to [1,2] for split sessions
+    for session in [1, 2]:
         session_data = data.query("session == {}".format(session))
         session_title, = session_data["session_title"].unique()
         session_data = pd.concat([

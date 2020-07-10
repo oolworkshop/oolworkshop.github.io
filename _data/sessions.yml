@@ -1,53 +1,5 @@
 - id: 1
   papers:
-  - abstract: The physical world can be decomposed into discrete 3D objects. Reasoning
-      about the world in terms of these objects may provide a number of advantages
-      to learning agents. For example, objects interact compositionally, and this
-      can support a strong form of generalization. Knowing properties of individual
-      objects and rules for how those properties interact, one can predict the effects
-      that objects will have on one another even if one has never witnessed an interaction
-      between the types of objects in question. The promise of object-level reasoning
-      has fueled a recent surge of interest in systems capable of learning to extract
-      object-oriented representations from perceptual input without supervision. However,
-      the vast majority of such systems treat objects as 2-dimensional entities, effectively
-      ignoring their 3-dimensional nature. In the current work, we propose a probabilistic,
-      object-oriented model equipped with the inductive bias that the world is made
-      up of 3D objects moving through a 3D world, and make a number of structural
-      adaptations which take advantage of that bias. In a series of experiments we
-      show that this system is capable not only of segmenting objects from the perceptual
-      stream, but also of extracting 3D information about objects (e.g. depth) and
-      of tracking them through 3D space.
-    authors: Eric Crawford and Joelle Pineau
-    camera_ready: true
-    cmt_id: 19
-    id: 19
-    kind: oral
-    session: 1
-    title: Learning 3D Object-Oriented World Models from Unlabeled Videos
-    track: research
-  - abstract: Many dynamic processes, including common scenarios in robotic control
-      and reinforcement learning (RL), involve a set of interacting subprocesses.
-      Though the subprocesses are not independent, their interactions are often sparse,
-      and the dynamics at any given time step can often be decomposed into locally
-      independent causal mechanisms. Such local causal structures can be leveraged
-      to improve the sample efficiency of sequence prediction and off-policy reinforcement
-      learning. We formalize this by introducing local causal models (LCMs), which
-      are induced from a global causal model by conditioning on a subset of the state
-      space. We propose an approach to inferring these structures given an object-oriented
-      state representation, as well as a novel algorithm for model-free Counterfactual
-      Data Augmentation (CoDA). CoDA uses local structures and an experience replay
-      to generate counterfactual experiences that are causally valid in the global
-      model. We find that CoDA significantly improves the performance of RL agents
-      in locally factored tasks, including the batch-constrained and goal-conditioned
-      settings.
-    authors: Silviu Pitis, Elliot Creager, and Animesh Garg
-    camera_ready: true
-    cmt_id: 17
-    id: 17
-    kind: oral
-    session: 1
-    title: Counterfactual Data Augmentation using Locally Factored Dynamics
-    track: research
   - abstract: Given visual observations of a reaching task together with a stick-like
       tool, we propose a novel approach that learns to exploit task-relevant object
       affordances by combining generative modelling with a task-based performance
@@ -104,27 +56,6 @@
     kind: spotlight
     session: 1
     title: Unsupervised Object Keypoint Learning using Local Spatial Predictability
-    track: research
-  - abstract: Compositional structures between parts and objects are inherent in natural
-      scenes. Recent work on representation learning has succeeded in modeling scenes
-      as composition of objects, but further decomposition of objects into parts and
-      subparts has largely been overlooked. In this paper, we propose RICH, the first
-      deep latent variable model for learning Representation of Interpretable Compositional
-      Hierarchies. At the core of RICH is a latent scene graph representation that
-      organizes the entities of a scene into a tree according to their compositional
-      relationships. During inference, RICH takes a top-down approach, allowing higher-level
-      representation to guide lower-level decomposition in case there is compositional
-      ambiguity. In experiments on images containing multiple compositional objects,
-      we demonstrate that RICH is able to learn the latent compositional hierarchy,
-      generate imaginary scenes, and improve data efficiency in downstream tasks.
-    authors: Fei Deng, Zhuo Zhi, and Sungjin Ahn
-    camera_ready: true
-    cmt_id: 30
-    id: 30
-    kind: spotlight
-    session: 1
-    title: Hierarchical Decomposition and Generation of Scenes with Compositional
-      Objects
     track: research
   - abstract: Groups of entities are naturally represented as sets, but generative
       models usually treat them as independent from each other or as sequences. This
@@ -200,27 +131,6 @@
     kind: spotlight
     session: 1
     title: Amodal 3D Reconstruction for Robotic Manipulation via Stability and Connectivity
-    track: research
-  - abstract: The ability to build a wide array of physical structures, from sand
-      castles to skyscrapers, is a hallmark of human intelligence. What computational
-      mechanisms enable humans to create such complex and varied structures? Here
-      we conduct an empirical investigation of how people reason about challenging
-      physical assembly problems and update their policies across repeated attempts.
-      Participants viewed silhouettes of 8 unique structures in a 2D virtual environment
-      simulating rigid-body physics, and aimed to reconstruct each one using a fixed
-      inventory of rectangular blocks. We found that people learned to build each
-      target structure more accurately across repeated attempts, and that these gains
-      reflect both group-level convergence upon a smaller set of viable policies,
-      as well as error-dependent updating of each individual's policy. Taken together,
-      our study provides a novel benchmark for evaluating how well algorithmic models
-      of physical reasoning and planning correspond to human behavior.
-    authors: William P McCarthy and Judy Fan
-    camera_ready: true
-    cmt_id: 14
-    id: 14
-    kind: spotlight
-    session: 1
-    title: Rapid policy updating in human physical construction
     track: research
   - abstract: Common-sense physical reasoning requires learning about the interactions
       of objects and their dynamics. The notion of an abstract object, however, encompasses
@@ -318,26 +228,6 @@
     session: 1
     title: Generative Graph Perturbations for Scene Graph Prediction
     track: research
-  - abstract: Unsupervised extraction of objects from low-level visual data is an
-      important goal for further progress in machine learning. Existing approaches
-      for representing objects without labels use structured generative models with
-      static images. These methods focus a large amount of their capacity on reconstructing
-      unimportant background pixels, missing low contrast or small objects. Conversely,
-      we present a new method that avoids losses in pixel space and over-reliance
-      on the limited signal a static image provides. Our approach takes advantage
-      of objects' motion by learning a discriminative, time-contrastive loss in the
-      space of slot representations, attempting to force each slot to not only capture
-      entities that move, but capture distinct objects from the other slots. Moreover,
-      we introduce a new quantitative evaluation metric to measure how ``diverse''
-      a set of slot vectors are, and use it to evaluate our model on 20 Atari games.
-    authors: Evan Racah and Sarath Chandar
-    camera_ready: true
-    cmt_id: 29
-    id: 29
-    kind: poster
-    session: 1
-    title: 'Slot Contrastive Networks: A Contrastive Approach for Representing Objects'
-    track: research
   - abstract: 'We offer a systematic comparison of the ability of neural network architectures
       to learn relations from collections of objects. Relational inference is a crucial
       component of human reasoning from early development, and while the deep learning
@@ -356,6 +246,151 @@
     session: 1
     title: Systematically Comparing Neural Network Architectures in Relation Leaning
     track: research
+  - abstract: A range of methods with suitable inductive biases exist to learn interpretable
+      object-centric representations of images without supervision. However, these
+      are largely restricted to visually simple images; robust object discovery in
+      real-world sensory datasets remains elusive. To increase the understanding of
+      such inductive biases, we empirically investigate the role of ``reconstruction
+      bottlenecks'' for scene decomposition in GENESIS, a recent VAE-based model.
+      We show such bottlenecks determine reconstruction and segmentation quality and
+      critically influence model behaviour.
+    authors: Martin Engelcke, Oiwi Parker Jones, and Ingmar Posner
+    camera_ready: true
+    cmt_id: 5
+    id: 5
+    kind: poster
+    session: 1
+    title: Reconstruction Bottlenecks in Object-Centric Generative Models
+    track: research
+  - abstract: We present a generative model of images, that incorporates a structured
+      latent representation separating objects from each other and from the background.
+      It explicitly models the depth ordering of objects, as well as their 2D positions,
+      with a novel and efficient approach to placement that avoids computationally-expensive
+      spatial transformers. The model can be trained from images alone, without the
+      need for object masks or depth supervision. It learns to generate coherent scenes,
+      and to decompose novel images into their constituent objects, predicting their
+      depth ordering, locations, and segmentation of occluded parts.
+    authors: "Titas Anciukevi\u010Dius, Christoph H Lampert, and Paul Henderson"
+    camera_ready: true
+    cmt_id: 11
+    id: 11
+    kind: poster
+    session: 1
+    title: Structured Generative Modeling of Images with Object Depths and Locations
+    track: research
+  title: Session 1 (3:30-4:30pm UTC)
+- id: 2
+  papers:
+  - abstract: The physical world can be decomposed into discrete 3D objects. Reasoning
+      about the world in terms of these objects may provide a number of advantages
+      to learning agents. For example, objects interact compositionally, and this
+      can support a strong form of generalization. Knowing properties of individual
+      objects and rules for how those properties interact, one can predict the effects
+      that objects will have on one another even if one has never witnessed an interaction
+      between the types of objects in question. The promise of object-level reasoning
+      has fueled a recent surge of interest in systems capable of learning to extract
+      object-oriented representations from perceptual input without supervision. However,
+      the vast majority of such systems treat objects as 2-dimensional entities, effectively
+      ignoring their 3-dimensional nature. In the current work, we propose a probabilistic,
+      object-oriented model equipped with the inductive bias that the world is made
+      up of 3D objects moving through a 3D world, and make a number of structural
+      adaptations which take advantage of that bias. In a series of experiments we
+      show that this system is capable not only of segmenting objects from the perceptual
+      stream, but also of extracting 3D information about objects (e.g. depth) and
+      of tracking them through 3D space.
+    authors: Eric Crawford and Joelle Pineau
+    camera_ready: true
+    cmt_id: 19
+    id: 19
+    kind: oral
+    session: 2
+    title: Learning 3D Object-Oriented World Models from Unlabeled Videos
+    track: research
+  - abstract: Many dynamic processes, including common scenarios in robotic control
+      and reinforcement learning (RL), involve a set of interacting subprocesses.
+      Though the subprocesses are not independent, their interactions are often sparse,
+      and the dynamics at any given time step can often be decomposed into locally
+      independent causal mechanisms. Such local causal structures can be leveraged
+      to improve the sample efficiency of sequence prediction and off-policy reinforcement
+      learning. We formalize this by introducing local causal models (LCMs), which
+      are induced from a global causal model by conditioning on a subset of the state
+      space. We propose an approach to inferring these structures given an object-oriented
+      state representation, as well as a novel algorithm for model-free Counterfactual
+      Data Augmentation (CoDA). CoDA uses local structures and an experience replay
+      to generate counterfactual experiences that are causally valid in the global
+      model. We find that CoDA significantly improves the performance of RL agents
+      in locally factored tasks, including the batch-constrained and goal-conditioned
+      settings.
+    authors: Silviu Pitis, Elliot Creager, and Animesh Garg
+    camera_ready: true
+    cmt_id: 17
+    id: 17
+    kind: oral
+    session: 2
+    title: Counterfactual Data Augmentation using Locally Factored Dynamics
+    track: research
+  - abstract: Compositional structures between parts and objects are inherent in natural
+      scenes. Recent work on representation learning has succeeded in modeling scenes
+      as composition of objects, but further decomposition of objects into parts and
+      subparts has largely been overlooked. In this paper, we propose RICH, the first
+      deep latent variable model for learning Representation of Interpretable Compositional
+      Hierarchies. At the core of RICH is a latent scene graph representation that
+      organizes the entities of a scene into a tree according to their compositional
+      relationships. During inference, RICH takes a top-down approach, allowing higher-level
+      representation to guide lower-level decomposition in case there is compositional
+      ambiguity. In experiments on images containing multiple compositional objects,
+      we demonstrate that RICH is able to learn the latent compositional hierarchy,
+      generate imaginary scenes, and improve data efficiency in downstream tasks.
+    authors: Fei Deng, Zhuo Zhi, and Sungjin Ahn
+    camera_ready: true
+    cmt_id: 30
+    id: 30
+    kind: spotlight
+    session: 2
+    title: Hierarchical Decomposition and Generation of Scenes with Compositional
+      Objects
+    track: research
+  - abstract: The ability to build a wide array of physical structures, from sand
+      castles to skyscrapers, is a hallmark of human intelligence. What computational
+      mechanisms enable humans to create such complex and varied structures? Here
+      we conduct an empirical investigation of how people reason about challenging
+      physical assembly problems and update their policies across repeated attempts.
+      Participants viewed silhouettes of 8 unique structures in a 2D virtual environment
+      simulating rigid-body physics, and aimed to reconstruct each one using a fixed
+      inventory of rectangular blocks. We found that people learned to build each
+      target structure more accurately across repeated attempts, and that these gains
+      reflect both group-level convergence upon a smaller set of viable policies,
+      as well as error-dependent updating of each individual's policy. Taken together,
+      our study provides a novel benchmark for evaluating how well algorithmic models
+      of physical reasoning and planning correspond to human behavior.
+    authors: William P McCarthy and Judy Fan
+    camera_ready: true
+    cmt_id: 14
+    id: 14
+    kind: spotlight
+    session: 2
+    title: Rapid policy updating in human physical construction
+    track: research
+  - abstract: Unsupervised extraction of objects from low-level visual data is an
+      important goal for further progress in machine learning. Existing approaches
+      for representing objects without labels use structured generative models with
+      static images. These methods focus a large amount of their capacity on reconstructing
+      unimportant background pixels, missing low contrast or small objects. Conversely,
+      we present a new method that avoids losses in pixel space and over-reliance
+      on the limited signal a static image provides. Our approach takes advantage
+      of objects' motion by learning a discriminative, time-contrastive loss in the
+      space of slot representations, attempting to force each slot to not only capture
+      entities that move, but capture distinct objects from the other slots. Moreover,
+      we introduce a new quantitative evaluation metric to measure how ``diverse''
+      a set of slot vectors are, and use it to evaluate our model on 20 Atari games.
+    authors: Evan Racah and Sarath Chandar
+    camera_ready: true
+    cmt_id: 29
+    id: 29
+    kind: poster
+    session: 2
+    title: 'Slot Contrastive Networks: A Contrastive Approach for Representing Objects'
+    track: research
   - abstract: 'The ability to represent semantic structure in the environment ---
       objects, parts, and relations --- is a core aspect of human visual perception
       and cognition. As a testament to this ability, humans are capable of expressing
@@ -372,7 +407,7 @@
     cmt_id: 15
     id: 15
     kind: poster
-    session: 1
+    session: 2
     title: Library learning for structured object concepts
     track: research
   - abstract: One of the ultimate goals of unsupervised representation learning is
@@ -392,7 +427,7 @@
     cmt_id: 25
     id: 25
     kind: poster
-    session: 1
+    session: 2
     title: 'iSprites: A Dataset for Identifiable Multi-Object Representation Learning'
     track: research
   - abstract: Rigid body systems are among the most important subjects of study in
@@ -418,24 +453,8 @@
     cmt_id: 22
     id: 22
     kind: poster
-    session: 1
+    session: 2
     title: Geometry-Aware Modeling of Rigid Body Physics
-    track: research
-  - abstract: A range of methods with suitable inductive biases exist to learn interpretable
-      object-centric representations of images without supervision. However, these
-      are largely restricted to visually simple images; robust object discovery in
-      real-world sensory datasets remains elusive. To increase the understanding of
-      such inductive biases, we empirically investigate the role of ``reconstruction
-      bottlenecks'' for scene decomposition in GENESIS, a recent VAE-based model.
-      We show such bottlenecks determine reconstruction and segmentation quality and
-      critically influence model behaviour.
-    authors: Martin Engelcke, Oiwi Parker Jones, and Ingmar Posner
-    camera_ready: true
-    cmt_id: 5
-    id: 5
-    kind: poster
-    session: 1
-    title: Reconstruction Bottlenecks in Object-Centric Generative Models
     track: research
   - abstract: 'We seek to learn a representation on a large annotated data source
       that generalizes to a target domain using limited new supervision. Many prior
@@ -456,7 +475,7 @@
     cmt_id: 1
     id: 1
     kind: poster
-    session: 1
+    session: 2
     title: Representation Learning Through Latent Canonicalizations
     track: research
   - abstract: Recently, there has been a growing interest in incorporating relational
@@ -474,24 +493,8 @@
     cmt_id: 12
     id: 12
     kind: poster
-    session: 1
+    session: 2
     title: Better Set Representations For Relational Reasoning
-    track: research
-  - abstract: We present a generative model of images, that incorporates a structured
-      latent representation separating objects from each other and from the background.
-      It explicitly models the depth ordering of objects, as well as their 2D positions,
-      with a novel and efficient approach to placement that avoids computationally-expensive
-      spatial transformers. The model can be trained from images alone, without the
-      need for object masks or depth supervision. It learns to generate coherent scenes,
-      and to decompose novel images into their constituent objects, predicting their
-      depth ordering, locations, and segmentation of occluded parts.
-    authors: "Titas Anciukevi\u010Dius, Christoph H Lampert, and Paul Henderson"
-    camera_ready: true
-    cmt_id: 11
-    id: 11
-    kind: poster
-    session: 1
-    title: Structured Generative Modeling of Images with Object Depths and Locations
     track: research
   - abstract: 'With increasing expressive power, deep neural networks have significantly
       improved the state-of-the-art on image classification datasets, such as ImageNet.
@@ -508,7 +511,7 @@
     cmt_id: 26
     id: 26
     kind: poster
-    session: 1
+    session: 2
     title: Time for a Background Check! Uncovering the Influence of Background Features
       on Deep Neural Networks
     track: research
@@ -534,7 +537,7 @@
     cmt_id: 10
     id: 10
     kind: poster
-    session: 1
+    session: 2
     title: 'ROMA: A Relational Object Modeling Agent for Sample-Efficient Reinforcement
       Learning'
     track: research
@@ -551,7 +554,7 @@
     cmt_id: 3
     id: 3
     kind: poster
-    session: 1
+    session: 2
     title: Generating Stochastic Object Dynamics in Scenes
     track: research
-  title: Session 1 (11-11:30 am ?)
+  title: Session 2 (11:00-11:59pm UTC)
