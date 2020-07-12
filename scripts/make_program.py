@@ -112,9 +112,9 @@ def make_program():
         data["abstract"] = data["abstract"]
         data["live"] = str(data["live"]).lower()
 
-        data["rocket_id"] = "ool_channel_{:02d}".format(data["unique_id"])
+        data["rocket_id"] = "ool-paper-{:d}".format(data["unique_id"])
         if data["kind"] == "opening":
-            data["rocket_id"] = "workshop_ool"
+            data["rocket_id"] = "object-oriented-learning-perception-representation-and-reasoning-11"
 
         html = TEMPLATE.format(**data)
         path = "program/ool_{}.html".format(data["unique_id"])
