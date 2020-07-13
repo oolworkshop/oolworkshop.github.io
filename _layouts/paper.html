@@ -7,7 +7,7 @@ session_2: false
 ---
 
 <div class="row justify-content-center">
-<div class="paper text-center">
+  <div class="paper text-center">
 	<h3>{{ page.title }}</h3>
 	<ul>
 		<li><b>{{ page.authors }}</b></li>
@@ -62,42 +62,38 @@ session_2: false
 <!--		<span><a href="/slides/BAICS_{{ page.id }}.pdf" target="_blank">Slides</a></span>-->
 <!--		</li>-->
 <!--		{% endif %}-->
-
-        {% if page.kind == "poster" %}
         <li></br>
+        {% if page.kind == "poster" %}
             <iframe width="560" height="315" src={{ page.youtube_url | replace: "youtu.be", "www.youtube.com/embed" }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
             <span><a href="{{ page.video_file_url }}" target="_blank">Downloadable Video File</a></span>
-        </li>
+        {% elsif page.kind == "oral" or page.kind == "spotlight" %}
+        <div class="row justify-content-center">
+          <div class="col">
+            <div id="presentation-embed-{{ page.slides_live_id }}" class="slp"></div>
+            <script src='https://slideslive.com/embed_presentation.js'></script>
+            <script>
+              embed = new SlidesLiveEmbed('presentation-embed-{{ page.slides_live_id }}', {
+              presentationId: '{{ page.slides_live_id }}',
+              autoPlay: false, // change to true to autoplay the embedded presentation
+              verticalEnabled: true,
+              allowHiddenControlsWhenPaused: true,
+              zoomRatio: 0.25,
+              hideTitle: true,
+              });
+            </script>
+            </div>
+          </div>
         {% endif %}
+        </li>
 		<li></br>
 		<span> <p align=justify>{{ page.abstract }} </p> </span>
 		</li>
 	</ul>
-</div>
+  </div>
 </div>
 
+<!--  Rocket Chat -->
 <div class="row justify-content-center">
-<!--  <div class="col">-->
-<!--	{% if layout.video and page.live != true %}-->
-<!--    <div id="presentation-embed-{{ page.slides_live_id }}" class="slp"></div>-->
-<!--    <script src='https://slideslive.com/embed_presentation.js'></script>-->
-<!--    <script>-->
-<!--      embed = new SlidesLiveEmbed('presentation-embed-{{ page.slides_live_id }}', {-->
-<!--      presentationId: '{{ page.slides_live_id }}',-->
-<!--      autoPlay: false, // change to true to autoplay the embedded presentation-->
-<!--      verticalEnabled: true,-->
-<!--      allowHiddenControlsWhenPaused: true,-->
-<!--      zoomRatio: 0.25,-->
-<!--      hideTitle: true,-->
-<!--      });-->
-<!--    </script>-->
-<!--    {% elsif page.live %}-->
-<!--    <div class="text-center"><i>Please note that this talk is NOT pre-recorded and will be streamed live.</i></div>-->
-<!--    {% else %}-->
-<!--    <div class="text-center"><i>Video coming soon!</i></div>-->
-<!--	{% endif %}-->
-<!--  </div>-->
-<!--  -->
 <!--  <div class="col">-->
 <!--	{% if layout.chat %}-->
 <!--    <div class="rocket">-->
