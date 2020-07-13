@@ -22,13 +22,13 @@
     session: 1
     title: Learning Affordances in Object-Centric Generative Models
     track: research
-  - abstract: "A  set  is  an  unordered  collection  of  unique elements\u2014and\
-      \ yet many machine learning models that generate sets impose an implicit or\
-      \ explicit ordering. Since model performance can depend on the choice of ordering,\
-      \ any particular ordering can lead to sub-optimal results.  An alternative solution\
+  - abstract: "A set is an unordered collection of unique elements\u2014and yet many\
+      \ machine learning models that generate sets impose an implicit or explicit\
+      \ ordering. Since model performance can depend on the choice of ordering, any\
+      \ particular ordering can lead to sub-optimal results. An alternative solution\
       \ is to use a permutation-equivariant set generator, which does not specify\
       \ an order-ing. An example of such a generator is the DeepSet Prediction Network\
-      \ (DSPN).  We introduce the Transformer Set Prediction Network (TSPN), a flexible\
+      \ (DSPN). We introduce the Transformer Set Prediction Network (TSPN), a flexible\
       \ permutation-equivariant model for set prediction based on the transformer,\
       \ that builds upon and outperforms DSPN in the quality of predicted set elements\
       \ and in the accuracy of their predicted sizes. We test our model on MNIST-as-point-clouds\
@@ -45,7 +45,7 @@
       keypoints. It leverages the predictability of local image regions from spatial
       neighborhoods to identify salient regions that correspond to object parts, which
       are then converted to keypoints. Unlike prior approaches, this does not overly
-      bias the keypoints to focus on a particular property of objects.  We demonstrate
+      bias the keypoints to focus on a particular property of objects. We demonstrate
       the efficacy of our approach on Atari where we find that it learns keypoints
       corresponding to the most salient object parts and is more robust to certain
       visual distractors.
@@ -170,31 +170,22 @@
     title: Unsupervised Learning of Independently Controllable Dynamic Components
     track: research
   - abstract: 'Parametric computer-aided design (CAD) is the dominant paradigm in
-      mechanical engineering for physical design.
-
-      Distinguished by relational geometry, parametric CAD models begin as two-dimensional
-      sketches consisting of geometric primitives (e.g., line segments, arcs) and
-      explicit constraints between them (e.g., coincidence, perpendicularity) that
-      form the basis for three-dimensional construction operations.
-
-      Training machine learning models to reason about and synthesize parametric CAD
-      designs has the potential to reduce design time and enable new design workflows.
-
-      Additionally, parametric CAD designs can be viewed as instances of constraint
-      programming and they offer a well-scoped test bed for exploring ideas in program
-      synthesis and induction.
-
-      To facilitate this research, we introduce SketchGraphs, a collection of 15 million
-      sketches extracted from real-world CAD models coupled with an open-source data
-      processing pipeline.
-
+      mechanical engineering for physical design. Distinguished by relational geometry,
+      parametric CAD models begin as two-dimensional sketches consisting of geometric
+      primitives (e.g., line segments, arcs) and explicit constraints between them
+      (e.g., coincidence, perpendicularity) that form the basis for three-dimensional
+      construction operations. Training machine learning models to reason about and
+      synthesize parametric CAD designs has the potential to reduce design time and
+      enable new design workflows. Additionally, parametric CAD designs can be viewed
+      as instances of constraint programming and they offer a well-scoped test bed
+      for exploring ideas in program synthesis and induction. To facilitate this research,
+      we introduce SketchGraphs, a collection of 15 million sketches extracted from
+      real-world CAD models coupled with an open-source data processing pipeline.
       Each sketch is represented as a geometric constraint graph where edges denote
       designer-imposed geometric relationships between primitives, the nodes of the
-      graph.
-
-      We demonstrate and establish benchmarks for two use cases of the dataset: generative
-      modeling of sketches and conditional generation of likely constraints given
-      unconstrained geometry.'
+      graph. We demonstrate and establish benchmarks for two use cases of the dataset:
+      generative modeling of sketches and conditional generation of likely constraints
+      given unconstrained geometry.'
     authors: Ari Seff, Yaniv Ovadia, Wenda Zhou, and Ryan P Adams
     camera_ready: true
     cmt_id: 33
@@ -228,16 +219,15 @@
     session: 1
     title: Generative Graph Perturbations for Scene Graph Prediction
     track: research
-  - abstract: 'We offer a systematic comparison of the ability of neural network architectures
+  - abstract: We offer a systematic comparison of the ability of neural network architectures
       to learn relations from collections of objects. Relational inference is a crucial
       component of human reasoning from early development, and while the deep learning
       community has not ignored the subject, it is often integrated into performing
       a task, such as CLEVR. We generate simple object representations and evaluate
       models on their ability to learn these relations in the abstract, which allows
       us to focus on the relevance of their inductive biases for such reasoning. Our
-      results highlight vast differences between our models, none of which attain
-      perfect performance across our evaluations, suggesting there is room for improvement
-      in this problem. '
+      results highlight substantial differences between our models, suggesting there
+      is room for further research in this domain.
     authors: Guy Davidson and Brenden M Lake
     camera_ready: true
     cmt_id: 20
@@ -290,14 +280,14 @@
       between the types of objects in question. The promise of object-level reasoning
       has fueled a recent surge of interest in systems capable of learning to extract
       object-oriented representations from perceptual input without supervision. However,
-      the vast majority of such systems treat objects as 2-dimensional entities, effectively
-      ignoring their 3-dimensional nature. In the current work, we propose a probabilistic,
-      object-oriented model equipped with the inductive bias that the world is made
-      up of 3D objects moving through a 3D world, and make a number of structural
-      adaptations which take advantage of that bias. In a series of experiments we
-      show that this system is capable not only of segmenting objects from the perceptual
-      stream, but also of extracting 3D information about objects (e.g. depth) and
-      of tracking them through 3D space.
+      the vast majority of such systems treat objects as 2D entities, effectively
+      ignoring their 3D nature. In the current work, we propose a probabilistic, object-oriented
+      model equipped with the inductive bias that the world is made up of 3D objects
+      moving through a 3D world, and make a number of structural adaptations which
+      take advantage of that bias. In a series of experiments we show that this system
+      is capable not only of segmenting objects from the perceptual stream, but also
+      of extracting 3D information about objects (e.g. depth) and of tracking them
+      through 3D space.
     authors: Eric Crawford and Joelle Pineau
     camera_ready: true
     cmt_id: 19
@@ -352,17 +342,17 @@
     track: research
   - abstract: The ability to build a wide array of physical structures, from sand
       castles to skyscrapers, is a hallmark of human intelligence. What computational
-      mechanisms enable humans to create such complex and varied structures? Here
-      we conduct an empirical investigation of how people reason about challenging
-      physical assembly problems and update their policies across repeated attempts.
-      Participants viewed silhouettes of 8 unique structures in a 2D virtual environment
-      simulating rigid-body physics, and aimed to reconstruct each one using a fixed
-      inventory of rectangular blocks. We found that people learned to build each
-      target structure more accurately across repeated attempts, and that these gains
-      reflect both group-level convergence upon a smaller set of viable policies,
-      as well as error-dependent updating of each individual's policy. Taken together,
-      our study provides a novel benchmark for evaluating how well algorithmic models
-      of physical reasoning and planning correspond to human behavior.
+      mechanisms enable humans to reason about how such structures are built? Here
+      we conduct an empirical investigation of how people solve challenging physical
+      assembly problems and update their policies across repeated attempts. Participants
+      viewed silhouettes of 8 unique towers in a 2D virtual environment simulating
+      rigid-body physics, and aimed to reconstruct each one using a fixed inventory
+      of rectangular blocks. We found that people learned to build each target tower
+      more accurately across repeated attempts, and that these gains reflect both
+      group-level convergence upon a smaller set of viable policies, as well as error-dependent
+      updating of each individual's policy. Taken together, our study provides a novel
+      benchmark for evaluating how well algorithmic models of physical reasoning and
+      planning correspond to human behavior.
     authors: William P McCarthy and Judy Fan
     camera_ready: true
     cmt_id: 14
@@ -391,17 +381,17 @@
     session: 2
     title: 'Slot Contrastive Networks: A Contrastive Approach for Representing Objects'
     track: research
-  - abstract: 'The ability to represent semantic structure in the environment ---
-      objects, parts, and relations --- is a core aspect of human visual perception
-      and cognition. As a testament to this ability, humans are capable of expressing
-      rich conceptual knowledge in simple iconic images. Here we leverage recent advances
-      in program synthesis to develop a self-supervised and data-efficient algorithm
-      for learning the the part-based structure of objects, as represented by graphics
-      programs. Our algorithm iteratively learns higher-order subroutines that can
-      be used to more compactly represent these objects, exploiting commonalities
-      between learned subroutines to infer a part-based grammar. Our experiments explore
-      how the resulting library of learned subroutines is jointly determined by the
-      data distribution and the cost of learning additional subroutines. '
+  - abstract: The ability to represent semantic structure in the environment --- objects,
+      parts, and relations --- is a core aspect of human visual perception and cognition.
+      As a testament to this ability, humans are capable of expressing rich conceptual
+      knowledge in simple iconic images. Here we leverage recent advances in program
+      synthesis to develop a self-supervised and data-efficient algorithm for learning
+      the the part-based structure of objects, as represented by graphics programs.
+      Our algorithm iteratively learns higher-order subroutines that can be used to
+      more compactly represent these objects, exploiting commonalities between learned
+      subroutines to infer a part-based grammar. Our experiments explore how the resulting
+      library of learned subroutines is jointly determined by the data distribution
+      and the cost of learning additional subroutines.
     authors: Haoliang Wang and Judy Fan
     camera_ready: true
     cmt_id: 15
@@ -456,10 +446,10 @@
     session: 2
     title: Geometry-Aware Modeling of Rigid Body Physics
     track: research
-  - abstract: 'We seek to learn a representation on a large annotated data source
-      that generalizes to a target domain using limited new supervision. Many prior
-      approaches to this problem have focused on learning ``disentangled'''' representations
-      so that as individual factors vary in a new domain, only a portion of the representation
+  - abstract: We seek to learn a representation on a large annotated data source that
+      generalizes to a target domain using limited new supervision. Many prior approaches
+      to this problem have focused on learning ``disentangled'' representations so
+      that as individual factors vary in a new domain, only a portion of the representation
       need be updated. In this work, we seek the generalization power of disentangled
       representations, but relax the requirement of explicit latent disentanglement
       and instead encourage linearity of individual factors of variation by requiring
@@ -469,7 +459,7 @@
       Assuming a source domain with access to meta-labels specifying the factors of
       variation within an image, we demonstrate experimentally that our method helps
       reduce the number of observations needed to generalize to a similar target domain
-      when compared to a number of supervised baselines. '
+      when compared to a number of supervised baselines.
     authors: Or Litany, Ari Morcos, Srinath Sridhar, Leonidas Guibas, and Judy Hoffman
     camera_ready: true
     cmt_id: 1
@@ -496,16 +486,18 @@
     session: 2
     title: Better Set Representations For Relational Reasoning
     track: research
-  - abstract: 'With increasing expressive power, deep neural networks have significantly
+  - abstract: With increasing expressive power, deep neural networks have significantly
       improved the state-of-the-art on image classification datasets, such as ImageNet.
-      However, with this progress, the improvement in the quality of learned representations
-      is still unclear. In particular, we ask whether the modern deep neural networks
-      start exploiting correlations with background features to achieve higher accuracy
-      on the test images. We answer this question in two distinct frameworks: 1) performance
-      solely with background features 2) performance when abstain or switching image
-      background. Our experimental results for thirty different networks shows that
-      current DNNs do have a tendency, and it increases with expressive power, to
-      exploit background features to solve the task at hand.'
+      In this paper, we investigate to what extent the increasing performance of deep
+      neural networks is impacted by background features? In particular, we focus
+      on background invariance, i.e., accuracy unaffected by switching background
+      features and background influence, i.e., predictive power of background features
+      itself when foreground is masked. We perform experiments with 32 different neural
+      networks ranging from small-size networks to large-scale networks trained with
+      up to one Billion images. Our investigations reveal that increasing expressive
+      power of DNNs leads to higher influence of background features, while simultaneously,
+      increases their ability to make the correct prediction when background features
+      are removed or replaced with a randomly selected texture-based background.
     authors: Vikash Sehwag, Rajvardhan Oak, Mung Chiang, and Prateek Mittal
     camera_ready: true
     cmt_id: 26
@@ -542,12 +534,13 @@
       Learning'
     track: research
   - abstract: We introduce Generative Structured World Models (G-SWM), a novel object-centric
-      generative model for videos. The G-SWM not only unifies the key properties of
-      previous models in a principled framework but also achieves two crucial new
-      abilities, multimodal uncertainty, and situated behavior. By investigating the
-      generation ability in comparison to the previous models, we demonstrate that
-      G-SWM achieves the best or comparable performance for all experiment settings
-      including a few complex settings that have not been tested before.
+      generative model for videos. G-SWM not only unifies the key properties of previous
+      models in a principled framework but also achieves two crucial new abilities,
+      multimodal uncertainty, and situated behavior. By investigating the generation
+      ability in comparison to previous models, we demonstrate that G-SWM achieves
+      the best or comparable performance for all experiment settings including a few
+      complex settings that have not been tested before. Our project website can be
+      found at https://sites.google.com/view/gswm.
     authors: Zhixuan Lin, Yi-Fu Wu, Skand Skand, Bofeng Fu, Jindong Jiang, and Sungjin
       Ahn
     camera_ready: true
