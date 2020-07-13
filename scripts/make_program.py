@@ -25,7 +25,6 @@ track: {track}
 live: {live}
 video_file_url: {video_file_url}
 youtube_url: {youtube_url}
-slideslive_url: {slideslive_url}
 ---
 """.strip()
 
@@ -58,7 +57,6 @@ def make_jekyll_data():
             "session_title",
             "video_file_url",
             "youtube_url",
-            "slideslive_url",
         ])
         sessions.append({
             "id": session,
@@ -79,7 +77,6 @@ def make_jekyll_data():
         "track",
         "video_file_url",
         "youtube_url",
-        "slideslive_url",
     ])
     speakers = speakers.to_dict(orient="records")
     with open("_data/speakers.yml", "w") as fh:
