@@ -71,11 +71,17 @@
   id: 38
   kind: oral
   title: Object-Oriented Drawings
-- abstract: TBD
+- abstract: Learning depends on both the learning mechanism and the structure of the
+    training data, yet most research in human learning and efforts in machine learning
+    concentrate on the learning mechanisms.  I will present evidence on the everyday-day
+    ego-centric visual experiences of infants.  The regularities differ fundamentally
+    and in  multiple inter-related from current approaches to training in machine
+    learning and perhaps will offer inspiration to more powerful, more incremental,
+    and more autonomous machine learning.
   authors: Linda Smith
   id: 39
   kind: oral
-  title: Invited Talk 6
+  title: Learning from an infant's point of view
 - abstract: 'How we represent signals has major implications for the algorithms we
     build to analyze them. Today, most signals are represented discretely: Images
     as grids of pixels, shapes as point clouds, audio as grids of amplitudes, etc.
