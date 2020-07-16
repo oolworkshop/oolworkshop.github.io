@@ -69,6 +69,9 @@ session_2: false
             </div></br>
             <span><a href="{{ page.video_file_url }}" target="_blank">Downloadable Video File</a></span>
         {% elsif page.kind == "oral" or page.kind == "spotlight" %}
+          {% assign today_date = 'now' | date: '%s' %}
+          {% assign publish_date = "August 1, 2020" | date: '%s' %}
+          {% if today_date > publish_date %}
 <!--        <div class="row justify-content-center">-->
 <!--          <div class="col">-->
 <!--            <div id="presentation-embed-{{ page.slides_live_id }}" class="container container-sm"></div>-->
@@ -85,9 +88,14 @@ session_2: false
 <!--            </script>-->
 <!--            </div>-->
 <!--          </div>-->
-          <div style="position: relative; padding-bottom: 56.25%; height: 0;"> 
-              <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="560" height="350" src="https://slideslive.com/{{ page.slides_live_id }}" frameborder="0"></iframe>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;"> 
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="560" height="350" src="https://slideslive.com/{{ page.slides_live_id }}" frameborder="0"></iframe>
+            </div>
+          {% else %}
+          <div>
+            <span>The video will become available after 1st August 2020 in accordance with the ICML2020 Code of Conduct.</span>
           </div>
+          {% endif %}
         {% endif %}
         </li>
 		<li></br>
