@@ -1,6 +1,7 @@
 import yaml
 import os
 import pandas as pd
+import re
 
 from utils import load_presentation_data, read_meeting_json, meeting_json_exists
 
@@ -120,6 +121,35 @@ def make_program():
             fh.write(html)
 
 
+def add_zoom_links():
+    all_data = load_presentation_data().to_dict(orient="records")
+    for data in all_data:
+        print(data["unique_id"])
+
+        if INCLUDE_MEETING_URLS:
+            meeting_id = "OOL_{}".format(data["unique_id"])
+            if meeting_json_exists(meeting_id):
+                meeting = read_meeting_json(meeting_id)
+                data["meeting_url"] = meeting["join_url"]
+            else:
+                print("No meeting '{}'".format(meeting_id))
+                data["meeting_url"] = ""
+        else:
+            data["meeting_url"] = ""
+
+        path = "program/ool_{}.html".format(data["unique_id"])
+        with open(path, "r") as fh:
+            html = fh.read()
+
+        pattern = r"meeting_url: .*"
+        repl = r"meeting_url: {}".format(data["meeting_url"])
+        html = re.sub(pattern, repl, html)
+
+        with open(path, "w") as fh:
+            fh.write(html)
+
+
 if __name__ == "__main__":
-    make_jekyll_data()
-    make_program()
+    # make_jekyll_data()
+    # make_program()
+    add_zoom_links()
