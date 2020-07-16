@@ -63,7 +63,7 @@ session_2: false
 <!--		</li>-->
 <!--		{% endif %}-->
         <li></br>
-        {% if page.kind == "poster" %}
+            {% if page.kind == "poster" %}
             <div style="position: relative; padding-bottom: 56.25%; height: 0;"> 
               <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="560" height="350" src={{ page.youtube_url | replace: "youtu.be", "www.youtube.com/embed" }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div></br>
@@ -71,7 +71,7 @@ session_2: false
         {% elsif page.kind == "oral" or page.kind == "spotlight" %}
         <div class="row justify-content-center">
           <div class="col">
-            <div id="presentation-embed-{{ page.slides_live_id }}" class="slp"></div>
+            <div id="presentation-embed-{{ page.slides_live_id }}" class="container container-sm"></div>
             <script src='https://slideslive.com/embed_presentation.js'></script>
             <script>
               embed = new SlidesLiveEmbed('presentation-embed-{{ page.slides_live_id }}', {
