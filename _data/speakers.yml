@@ -43,7 +43,7 @@
   authors: Fabien Baradel
   id: 36
   kind: oral
-  title: Towards counterfactual learning
+  title: Object-level video understanding
 - abstract: Two-dimensional images are commonly used to study and model perceptual
     and cognitive processes because of the convenience and ease of experimental control
     they provide. However, real objects differ from pictures in many ways, including
