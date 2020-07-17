@@ -2,8 +2,8 @@
 layout: default
 video: true
 chat: true
-session_1: false
-session_2: false
+session_1: true
+session_2: true
 ---
 
 <div class="row justify-content-center">
@@ -32,12 +32,12 @@ session_2: false
 		<span> · </span>
 		<span><a href="{{ page.meeting_url }}" target="_blank">Join Meeting Room</a></span>
 		<span> · </span>
-		<span><a href="https://iclr.cc/virtual/workshops_4.html" target="_blank">Password</a></span>
+		<span>See Rocket.Chat for password</span>
 		{% elsif page.session_id == 2 and layout.session_2 and page.meeting_url %}
 		<span> · </span>
 		<span><a href="{{ page.meeting_url }}" target="_blank">Join Meeting Room</a></span>
 		<span> · </span>
-		<span><a href="https://iclr.cc/virtual/workshops_4.html" target="_blank">Password</a></span>
+		<span>See Rocket.Chat for password</span>
 		{% endif %}
 		</li>
 		{% endif %}

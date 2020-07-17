@@ -6,7 +6,7 @@ import re
 from utils import load_presentation_data, read_meeting_json, meeting_json_exists
 
 
-INCLUDE_MEETING_URLS = False
+INCLUDE_MEETING_URLS = True
 TEMPLATE = """
 ---
 layout: paper
